@@ -17,6 +17,7 @@ namespace GameController
         // Features
         [SerializeField] private GameObject startScreenCanvas;
         [SerializeField] private GameObject pauseScreenCanvas;
+        [SerializeField] private GameObject gameplayController;
 
         private void Awake()
         {
@@ -32,7 +33,7 @@ namespace GameController
 
         private void StartGameplay()
         {
-            TransitionTo(new GameplayState());
+            TransitionTo(new GameplayState(gameplayController));
         }
         
         private void PauseGame()
@@ -42,7 +43,7 @@ namespace GameController
         
         private void ResumeGame()
         {
-            TransitionTo(new GameplayState());
+            TransitionTo(new GameplayState(gameplayController));
         }
         
         private void EndGame()

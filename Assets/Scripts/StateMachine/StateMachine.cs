@@ -18,7 +18,7 @@ namespace StateMachine
         {
             if (!currentStateSO.currentState.HasNextState(targetState))
             {
-                throw new InvalidOperationException("Invalid game state transition");
+                throw new InvalidOperationException("Invalid state transition");
             }
 
             currentStateSO.currentState.Exit();
