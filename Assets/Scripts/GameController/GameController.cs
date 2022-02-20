@@ -1,6 +1,4 @@
-using System;
 using DataStructures.Events;
-using StateMachine;
 using UnityEngine;
 
 namespace GameController
@@ -18,6 +16,7 @@ namespace GameController
         
         // Features
         [SerializeField] private GameObject startScreenCanvas;
+        [SerializeField] private GameObject pauseScreenCanvas;
 
         private void Awake()
         {
@@ -38,7 +37,7 @@ namespace GameController
         
         private void PauseGame()
         {
-            TransitionTo(new PauseScreenState());
+            TransitionTo(new PauseScreenState(pauseScreenCanvas));
         }
         
         private void ResumeGame()
