@@ -1,0 +1,25 @@
+﻿using System;
+using System.Collections.Generic;
+using StateMachine;
+using UnityEngine;
+
+namespace GameController
+{
+    public class ExitingGameState : IState
+    {
+        public void Enter()
+        {
+            Debug.Log("Enter " + this.GetType().FullName);
+        }
+
+        public void Exit()
+        {
+            Debug.Log("Exit " + this.GetType().FullName);
+        }
+        
+        public bool HasNextState(IState nextState)
+        {
+            return false;
+        }
+    }
+}
