@@ -10,7 +10,7 @@ namespace DataStructures.Events
         
         public void Raise()
         {
-            listeners.Invoke();
+            listeners?.Invoke();
         }
 
         public void RegisterListener(Action listener)

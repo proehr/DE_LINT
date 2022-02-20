@@ -15,6 +15,9 @@ namespace GameController
         [SerializeField] private GameEvent onGameEnd;
         [SerializeField] private GameEvent onBackToStartScreen;
         [SerializeField] private GameEvent onExit;
+        
+        // Features
+        [SerializeField] private GameObject startScreenCanvas;
 
         private void Awake()
         {
@@ -25,7 +28,7 @@ namespace GameController
             onBackToStartScreen.RegisterListener(BackToStartScreen);
             onExit.RegisterListener(ExitGame);
 
-            InitializeStateMachine(new StartScreenState());
+            InitializeStateMachine(new StartScreenState(startScreenCanvas));
         }
 
         private void StartGameplay()
@@ -50,7 +53,7 @@ namespace GameController
         
         private void BackToStartScreen()
         {
-            TransitionTo(new StartScreenState());
+            TransitionTo(new StartScreenState(startScreenCanvas));
         }
 
         private void ExitGame()
