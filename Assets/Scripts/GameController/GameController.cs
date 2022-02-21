@@ -1,4 +1,5 @@
 using DataStructures.Events;
+using UIController;
 using UnityEngine;
 
 namespace GameController
@@ -16,6 +17,7 @@ namespace GameController
         
         // Features
         [SerializeField] private GameObject startScreenCanvas;
+        [SerializeField] private SaveFilePicker saveFilePicker;
         [SerializeField] private GameObject pauseScreenCanvas;
         [SerializeField] private GameObject gameplayController;
 
@@ -28,7 +30,7 @@ namespace GameController
             onBackToStartScreen.RegisterListener(BackToStartScreen);
             onExit.RegisterListener(ExitGame);
 
-            InitializeStateMachine(new StartScreenState(startScreenCanvas));
+            InitializeStateMachine(new StartScreenState(startScreenCanvas, saveFilePicker));
         }
 
         private void StartGameplay()
@@ -53,7 +55,7 @@ namespace GameController
         
         private void BackToStartScreen()
         {
-            TransitionTo(new StartScreenState(startScreenCanvas));
+            TransitionTo(new StartScreenState(startScreenCanvas, saveFilePicker));
         }
 
         private void ExitGame()
