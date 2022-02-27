@@ -1,0 +1,3 @@
+[submodule "Assets/Packages/PrivateAssets"]
+	path = Assets/Packages/PrivateAssets
+	url = git@github.com:proehr/de_lintPrivateAssets.git
