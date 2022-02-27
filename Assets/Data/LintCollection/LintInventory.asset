@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e4984495944244d1947958250f006ebc, type: 3}
+  m_Name: LintInventory
+  m_EditorClassIdentifier: 
+  smallLintMaxValue: 100
+  smallLintCount: {fileID: 11400000, guid: b0bda3f57980b2f45a4e610cd5ec4370, type: 2}
+  normalLintMaxValue: 100
+  normalLintCount: {fileID: 11400000, guid: af384a2107cb2bd40bddb169389519e2, type: 2}
+  bigLintMaxValue: 100
+  bigLintCount: {fileID: 11400000, guid: 50370c4edcb527b48821a0ed8e242006, type: 2}
+  onBigLintFull: {fileID: 11400000, guid: 21f5ffed09109c346916661ecec28be8, type: 2}
+  onLintCountChanged: {fileID: 11400000, guid: 192e1cb399603be4f8b16c6d8c649d6e, type: 2}
