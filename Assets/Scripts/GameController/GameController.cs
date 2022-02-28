@@ -1,6 +1,7 @@
 using DataStructures.Events;
 using UIController;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace GameController
 {
@@ -28,7 +29,7 @@ namespace GameController
             onResume.RegisterListener(ResumeGame);
             onGameEnd.RegisterListener(EndGame);
             onBackToStartScreen.RegisterListener(BackToStartScreen);
-            onExit.RegisterListener(ExitGame);
+            onExit.RegisterListener(ExitGame); ;
 
             InitializeStateMachine(new StartScreenState(startScreenCanvas, saveFilePicker));
         }

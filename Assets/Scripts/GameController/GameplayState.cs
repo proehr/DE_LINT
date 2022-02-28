@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using StateMachine;
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 namespace GameController
 {
@@ -9,7 +10,7 @@ namespace GameController
     {
 
         private readonly GameObject gameplayController;
-        
+
         public GameplayState(GameObject gameplayController)
         {
             this.gameplayController = gameplayController;

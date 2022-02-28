@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: da96242606d8457ebd2a5d9a603ba3c0, type: 3}
   m_Name: SmallLintCount
   m_EditorClassIdentifier: 
-  value: 50
+  value: 0
