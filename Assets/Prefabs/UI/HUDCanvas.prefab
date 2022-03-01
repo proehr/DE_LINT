@@ -899,6 +899,12 @@ MonoBehaviour:
   normalLintCount: {fileID: 11400000, guid: af384a2107cb2bd40bddb169389519e2, type: 2}
   bigLintCount: {fileID: 11400000, guid: 50370c4edcb527b48821a0ed8e242006, type: 2}
   onLintCountChanged: {fileID: 11400000, guid: 192e1cb399603be4f8b16c6d8c649d6e, type: 2}
+  onChangeInteractableObjects: {fileID: 11400000, guid: edb82443652e1d247baf9cef3ca45a15, type: 2}
+  interactableObjects: {fileID: 11400000, guid: 25ebc8c71e4b8a54ea04c9c6943dbb92, type: 2}
+  interactionHUD: {fileID: 0}
+  interactionListPanel: {fileID: 0}
+  activeInteractionNoticePrefab: {fileID: 5661967281128623520, guid: 25cfdfeb8e3a37a4f93b508f6f796b1a, type: 3}
+  interactionNoticePrefab: {fileID: 265488566247993889, guid: aac29f05a93699a4f851a453ba03e58c, type: 3}
 --- !u!1 &3865985813569260246
 GameObject:
   m_ObjectHideFlags: 0

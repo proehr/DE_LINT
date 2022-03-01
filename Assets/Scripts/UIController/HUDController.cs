@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using DataStructures.Events;
 using DataStructures.Variables;
+using InteractionSystem;
 using TMPro;
 using UnityEngine;
 
@@ -16,19 +19,26 @@ namespace UIController
         [SerializeField] private IntVariable normalLintCount;
         [SerializeField] private IntVariable bigLintCount;
         [SerializeField] private GameEvent onLintCountChanged;
-
+        
+        [SerializeField] private GameEvent onChangeInteractableObjects;
+        [SerializeField] private InteractableObjects_SO interactableObjects;
+        [SerializeField] private GameObject interactionHUD;
+        [SerializeField] private Transform interactionListPanel;
+        [SerializeField] private TMP_Text activeInteractionNoticePrefab;
+        [SerializeField] private TMP_Text interactionNoticePrefab;
         private void Awake()
         {
-            onLintCountChanged.RegisterListener(SetHUDValues);
-            SetHUDValues();
+            onLintCountChanged.RegisterListener(SetLintCountHUDValues);
+            onChangeInteractableObjects.RegisterListener(SetInteractableObjects);
+            SetLintCountHUDValues();
         }
 
         private void OnEnable()
         {
-            SetHUDValues();
+            SetLintCountHUDValues();
         }
 
-        private void SetHUDValues()
+        private void SetLintCountHUDValues()
         {
             smallLintCountText.text = GetStringifiedCount(smallLintCount.value);
             normalLintCountText.text = GetStringifiedCount(normalLintCount.value);
@@ -43,6 +53,35 @@ namespace UIController
             }
 
             return count.ToString();
+        }
+
+        private void SetInteractableObjects()
+        {
+            if (!interactableObjects.IOList.Any())
+            {
+                interactionHUD.SetActive(false);
+            }
+            else
+            {
+                interactionHUD.SetActive(true);
+                for (int i = 0; i < interactionListPanel.childCount; i++)
+                {
+                    Destroy(interactionListPanel.GetChild(i).gameObject);
+                }
+                
+                BaseInteractableObject baseInteractableObject = interactableObjects.IOList[0];
+                TMP_Text interactableObjectNotice = Instantiate(activeInteractionNoticePrefab, interactionListPanel);
+                interactableObjectNotice.SetText(baseInteractableObject.interactionNotice);
+                
+                for (int i = 1; i < interactableObjects.IOList.Count; i++)
+                {
+                    baseInteractableObject = interactableObjects.IOList[i];
+                    interactableObjectNotice = Instantiate(interactionNoticePrefab, interactionListPanel);
+                    interactableObjectNotice.SetText(baseInteractableObject.interactionNotice);
+                }
+                
+                Canvas.ForceUpdateCanvases();
+            }
         }
     }
 }
