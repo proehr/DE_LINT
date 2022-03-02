@@ -39,5 +39,10 @@ namespace InputManager
         {
             onInteract.Raise();
         }
+        
+        public void ResetCursorState()
+        {
+            Cursor.lockState = cursorLocked ? CursorLockMode.Locked : CursorLockMode.None;
+        }
     }
 }

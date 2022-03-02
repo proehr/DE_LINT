@@ -1,5 +1,6 @@
 ﻿using System;
 using DataStructures.Events;
+using InputManager;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -9,30 +10,35 @@ namespace GameplayController
     {
         // Incoming Gameplay Events
         [SerializeField] private GameEvent onStartExploration;
-        [SerializeField] private GameEvent onStartInteraction;
+        [SerializeField] private GameEvent onStartDialogue;
+        [SerializeField] private GameEvent onEndDialogue;
         
         // Related Feature Objects
         [SerializeField] private GameObject hudCanvas;
+        [SerializeField] private GameObject dialogueCanvas;
+        [SerializeField] private PlayerInput explorationInput;
+        [SerializeField] private GameplayInputManager inputManager;
 
         private void Awake()
         {
             onStartExploration.RegisterListener(StartExploration);
-            onStartInteraction.RegisterListener(StartInteraction);
+            onStartDialogue.RegisterListener(StartDialogue);
+            onEndDialogue.RegisterListener(StartExploration);
         }
 
         private void OnEnable()
         {
-            InitializeStateMachine(new ExplorationState(hudCanvas));
+            InitializeStateMachine(new ExplorationState(hudCanvas, explorationInput, inputManager));
         }
 
         private void StartExploration()
         {
-            TransitionTo(new ExplorationState(hudCanvas));
+            TransitionTo(new ExplorationState(hudCanvas, explorationInput, inputManager));
         }
         
-        private void StartInteraction()
+        private void StartDialogue()
         {
-            TransitionTo(new InteractionState());
+            TransitionTo(new DialogueState(dialogueCanvas));
         }
     }
 }

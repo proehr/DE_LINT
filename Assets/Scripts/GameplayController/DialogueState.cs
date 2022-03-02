@@ -6,21 +6,30 @@ using UnityEngine;
 
 namespace GameplayController
 {
-    public class InteractionState : IState
+    public class DialogueState : IState
 
     {
+        private readonly GameObject dialogueCanvas;
+
+        public DialogueState(GameObject dialogueCanvas)
+        {
+            this.dialogueCanvas = dialogueCanvas;
+        }
+
         public void Enter()
         {
             Debug.Log("Enter " + this.GetType().FullName);
+            dialogueCanvas.SetActive(true);
         }
 
         public void Exit()
         {
             Debug.Log("Exit " + this.GetType().FullName);
+            dialogueCanvas.SetActive(false);
         }
 
-        private readonly List<Type> nextStates = new List<Type> {typeof(InteractionState), typeof(ExplorationState)};
-        
+        private readonly List<Type> nextStates = new List<Type> {typeof(DialogueState), typeof(ExplorationState)};
+
         public bool HasNextState(IState nextState)
         {
             return nextStates.Contains(nextState.GetType());

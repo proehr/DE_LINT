@@ -12,6 +12,8 @@ namespace InteractionSystem
 
         private void Awake()
         {
+            interactableObjects.Reset();
+            
             onScrollUp.RegisterListener(interactableObjects.ShiftRight);
             onScrollDown.RegisterListener(interactableObjects.ShiftLeft);
             onInteract.RegisterListener(Interact);

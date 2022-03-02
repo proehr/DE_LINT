@@ -46,5 +46,10 @@ namespace InteractionSystem
                 onChangeInteractableObjects.Raise();
             }
         }
+
+        public void Reset()
+        {
+           ioList = new List<BaseInteractableObject>();
+        }
     }
 }
