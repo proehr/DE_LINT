@@ -169,8 +169,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e71b00ea975d42c190d6049ead3c2950, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  onInteract: {fileID: 11400000, guid: 39f8e64912f2fa049bb0f37cda66a1ad, type: 2}
   interactionNotice: Interact with Cube 1
+  onInteractionEvents:
+  - {fileID: 11400000, guid: 39f8e64912f2fa049bb0f37cda66a1ad, type: 2}
 --- !u!54 &4510335630023954994
 Rigidbody:
   m_ObjectHideFlags: 0

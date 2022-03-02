@@ -73,6 +73,15 @@
                     "processors": "",
                     "interactions": "",
                     "initialStateCheck": false
+                },
+                {
+                    "name": "TriggerQuestLog",
+                    "type": "Button",
+                    "id": "f7564294-553a-4bd7-be0a-4470bddf986e",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
@@ -282,6 +291,17 @@
                     "processors": "",
                     "groups": "",
                     "action": "Interact",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                },
+                {
+                    "name": "",
+                    "id": "fceccd54-45ec-43a3-8bd1-01a664aa6baa",
+                    "path": "<Keyboard>/j",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "TriggerQuestLog",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

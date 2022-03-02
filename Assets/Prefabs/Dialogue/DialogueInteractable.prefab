@@ -169,5 +169,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionNotice: Talk to the CUBE
+  onInteractionEvents:
+  - {fileID: 11400000, guid: ac839565b21bd264297bf0a7668bf1ba, type: 2}
   entryDialogueMessage: {fileID: 11400000, guid: 290033f1fcc068b4bbf0ab20d2bf39cf, type: 2}
-  onStartDialogue: {fileID: 11400000, guid: ac839565b21bd264297bf0a7668bf1ba, type: 2}

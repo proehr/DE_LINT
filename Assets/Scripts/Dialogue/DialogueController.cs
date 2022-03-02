@@ -48,8 +48,10 @@ namespace Dialogue
             else if (currentDialogueStep.GetType() == typeof(DialogueEvent_SO))
             {
                 DialogueEvent_SO dialogueEvent = (DialogueEvent_SO)currentDialogueStep;
-                dialogueEvent.DialogueEvent.Raise();
-                
+                foreach (GameEvent gameEvent in dialogueEvent.DialogueEvents)
+                {
+                    gameEvent.Raise();
+                }
             }
         }
     }

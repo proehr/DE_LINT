@@ -4,6 +4,7 @@ using System.Linq;
 using DataStructures.Events;
 using DataStructures.Variables;
 using InteractionSystem;
+using Quest;
 using TMPro;
 using UnityEngine;
 
@@ -26,11 +27,50 @@ namespace UIController
         [SerializeField] private Transform interactionListPanel;
         [SerializeField] private TMP_Text activeInteractionNoticePrefab;
         [SerializeField] private TMP_Text interactionNoticePrefab;
+
+        [SerializeField] private GameEvent onTriggerQuestLog;
+        [SerializeField] private QuestLog_SO questLog;
+        [SerializeField] private GameObject questLogHUD;
+        [SerializeField] private Transform questListPanel;
+        [SerializeField] private TMP_Text questLogEntryPrefab;
+        
         private void Awake()
         {
             onLintCountChanged.RegisterListener(SetLintCountHUDValues);
             onChangeInteractableObjects.RegisterListener(SetInteractableObjects);
+            onTriggerQuestLog.RegisterListener(TriggerQuestLog);
             SetLintCountHUDValues();
+        }
+
+        private void TriggerQuestLog()
+        {
+            if (questLogHUD.activeSelf)
+            {
+                CloseQuestLog();
+            }
+            else
+            {
+                OpenQuestLog();
+            }
+        }
+
+        private void OpenQuestLog()
+        {
+            foreach (Quest_SO questSo in questLog.GetActiveQuests())
+            {
+                TMP_Text questLogEntry = Instantiate(questLogEntryPrefab, questListPanel);
+                questLogEntry.SetText("- " + questSo.QuestName + ": " + questSo.GetCurrentQuestStep().Description);
+            }
+            questLogHUD.SetActive(true);
+        }
+        
+        private void CloseQuestLog()
+        {
+            questLogHUD.SetActive(false);
+            for (int i = 0; i < questListPanel.childCount; i++)
+            {
+                Destroy(questListPanel.GetChild(i).gameObject);
+            }
         }
 
         private void OnEnable()

@@ -12,6 +12,7 @@ namespace InputManager
         [SerializeField] private GameEvent onScrollUp;
         [SerializeField] private GameEvent onScrollDown;
         [SerializeField] private GameEvent onInteract;
+        [SerializeField] private GameEvent onTriggerQuestLog;
 
         public void OnPauseGame()
         {
@@ -38,6 +39,11 @@ namespace InputManager
         public void OnInteract()
         {
             onInteract.Raise();
+        }
+
+        public void OnTriggerQuestLog()
+        {
+            onTriggerQuestLog.Raise();
         }
         
         public void ResetCursorState()
