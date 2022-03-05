@@ -1,7 +1,22 @@
 fileFormatVersion: 2
-guid: 26284e40d9e89be47bbcb20600501a75
+guid: aefbd2b40d02e3849acfc0105dfcc881
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 1135619873572007795
+    second: CPU
+  - first:
+      213: -589216064899178558
+    second: RAM
+  - first:
+      213: 4696976085749793147
+    second: SSD
+  - first:
+      213: -5336593409307099795
+    second: GPU
+  - first:
+      213: -3160775164482794701
+    second: SATA
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -41,7 +56,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -113,11 +128,116 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: CPU
+      rect:
+        serializedVersion: 2
+        x: 283
+        y: 448
+        width: 90
+        height: 88
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f222c124882cf00800000000000000
+      internalID: 1135619873572007795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RAM
+      rect:
+        serializedVersion: 2
+        x: 440
+        y: 345
+        width: 85
+        height: 308
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cf1bbb5c1fa2d7f0800000000000000
+      internalID: -589216064899178558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SSD
+      rect:
+        serializedVersion: 2
+        x: 207
+        y: 309
+        width: 188
+        height: 51
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b710f954dd20f2140800000000000000
+      internalID: 4696976085749793147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: GPU
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 238
+        width: 421
+        height: 68
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6d3f87919c90f5b0800000000000000
+      internalID: -5336593409307099795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SATA
+      rect:
+        serializedVersion: 2
+        x: 572
+        y: 103
+        width: 48
+        height: 139
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33b40220cbba224d0800000000000000
+      internalID: -3160775164482794701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: 8862de7e9a34f1f4888ea1b52a1ba3d8
     internalID: 0
     vertices: []
     indices: 
