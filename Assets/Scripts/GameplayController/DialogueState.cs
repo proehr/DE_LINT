@@ -28,7 +28,7 @@ namespace GameplayController
             dialogueCanvas.SetActive(false);
         }
 
-        private readonly List<Type> nextStates = new List<Type> {typeof(DialogueState), typeof(ExplorationState)};
+        private readonly List<Type> nextStates = new List<Type> {typeof(DialogueState), typeof(ExplorationState), typeof(MiniGameState)};
 
         public bool HasNextState(IState nextState)
         {

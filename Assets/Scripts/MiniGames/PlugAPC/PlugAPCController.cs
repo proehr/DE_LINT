@@ -7,7 +7,7 @@ using Random = System.Random;
 
 namespace MiniGames.PlugAPC
 {
-    public class PlugAPCController : MonoBehaviour
+    public class PlugAPCController : BaseMiniGameController
     {
         [SerializeField] private PlugAPCComponent motherboardPrefab;
         [SerializeField] private List<PlugAPCComponent> componentPrefabs;

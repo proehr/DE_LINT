@@ -42,9 +42,11 @@ namespace GameplayController
             gameplayInputManager.ResetCursorState();
         }
 
+        private readonly List<Type> nextStates = new List<Type> {typeof(DialogueState), typeof(MiniGameState)};
+
         public bool HasNextState(IState nextState)
         {
-            return nextState.GetType() == typeof(DialogueState);
+            return nextStates.Contains(nextState.GetType());
         }
     }
 }
