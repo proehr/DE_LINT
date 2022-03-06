@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentName: Central Processing Unit
-  function: Performs operations specified in computer programs
+  function: Performs operations specified in memory
   motherboardViewPrefab: {fileID: 6436091204380931070, guid: 16908ee7a516bf74495ca30ae24de1d5, type: 3}
   onPressComponentButton: {fileID: 11400000, guid: 7b71cf776f7de4d4f9258760284aacbe, type: 2}
 --- !u!1 &3973859302338071883

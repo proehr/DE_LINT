@@ -21,6 +21,9 @@ namespace GameController
         [SerializeField] private SaveFilePicker saveFilePicker;
         [SerializeField] private GameObject pauseScreenCanvas;
         [SerializeField] private GameObject gameplayController;
+        [SerializeField] private GameObject dialogueController;
+        [SerializeField] private GameObject environmentSpaces;
+        [SerializeField] private GameObject storyController;
 
         private void Awake()
         {
@@ -36,7 +39,7 @@ namespace GameController
 
         private void StartGameplay()
         {
-            TransitionTo(new GameplayState(gameplayController));
+            TransitionTo(new GameplayState(gameplayController, dialogueController, environmentSpaces, storyController));
         }
         
         private void PauseGame()
@@ -46,7 +49,7 @@ namespace GameController
         
         private void ResumeGame()
         {
-            TransitionTo(new GameplayState(gameplayController));
+            TransitionTo(new GameplayState(gameplayController, dialogueController, environmentSpaces, storyController));
         }
         
         private void EndGame()

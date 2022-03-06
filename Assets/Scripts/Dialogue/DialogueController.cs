@@ -17,9 +17,25 @@ namespace Dialogue
         
         [SerializeField] private Button optionButtonPrefab;
 
+        [SerializeField] private GameEvent onStartDialogue;
+        [SerializeField] private GameEvent onEndDialogue;
+        [SerializeField] private GameObject dialogueCanvas;
+
         private void OnEnable()
         {
+            onStartDialogue.RegisterListener(OpenDialogueCanvas);
+            onEndDialogue.RegisterListener(CloseDialogueCanvas);
+        }
+
+        private void OpenDialogueCanvas()
+        {
+            dialogueCanvas.SetActive(true);
             StartNextDialogueStep();
+        }
+
+        private void CloseDialogueCanvas()
+        {
+            dialogueCanvas.SetActive(false);
         }
 
         private void StartNextDialogueStep()

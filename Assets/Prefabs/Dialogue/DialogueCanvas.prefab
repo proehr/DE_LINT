@@ -252,6 +252,9 @@ MonoBehaviour:
   dialogueMessage: {fileID: 1411809703321534341}
   optionButtonsList: {fileID: 1411809701707442672}
   optionButtonPrefab: {fileID: 8498158964596898062, guid: 143c95bdbea09494cb0e86310c1bf195, type: 3}
+  onStartDialogue: {fileID: 11400000, guid: ac839565b21bd264297bf0a7668bf1ba, type: 2}
+  onEndDialogue: {fileID: 11400000, guid: 0d13f1e0ab92a874782763ff4a76a4f5, type: 2}
+  dialogueCanvas: {fileID: 1411809702009503225}
 --- !u!1 &1411809702375701621
 GameObject:
   m_ObjectHideFlags: 0

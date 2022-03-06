@@ -270,7 +270,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionNotice: Start PlugAPC MiniGame
   onInteractionEvents:
-  - {fileID: 11400000, guid: 39f8e64912f2fa049bb0f37cda66a1ad, type: 2}
   - {fileID: 11400000, guid: f8cf0c257f2034447a0413fe2cd1a75c, type: 2}
   baseMiniGameController: {fileID: 897487186}
   queuedMiniGame: {fileID: 11400000, guid: caf3ddb74cb4a4e48855ce94e8a9c5a9, type: 2}
@@ -584,46 +583,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 778274401509781283, guid: 7fd26004dfb4d0044aafd64c8ed07a9d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 778274401509781283, guid: 7fd26004dfb4d0044aafd64c8ed07a9d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 778274401509781283, guid: 7fd26004dfb4d0044aafd64c8ed07a9d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 11400000, guid: c2d859112858b0648b8a404ed48ad1d2, type: 2}
-    - target: {fileID: 778274401509781283, guid: 7fd26004dfb4d0044aafd64c8ed07a9d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 778274401509781283, guid: 7fd26004dfb4d0044aafd64c8ed07a9d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: Raise
-      objectReference: {fileID: 0}
-    - target: {fileID: 778274401509781283, guid: 7fd26004dfb4d0044aafd64c8ed07a9d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: DataStructures.Events.GameEvent, Assembly-CSharp
-      objectReference: {fileID: 0}
-    - target: {fileID: 778274401509781283, guid: 7fd26004dfb4d0044aafd64c8ed07a9d, type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
-      value: UnityEngine.Object, UnityEngine
-      objectReference: {fileID: 0}
-    - target: {fileID: 5422559185782468372, guid: 7fd26004dfb4d0044aafd64c8ed07a9d, type: 3}
-      propertyPath: m_IsActive
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8954381417999531891, guid: 7fd26004dfb4d0044aafd64c8ed07a9d, type: 3}
       propertyPath: m_Name
       value: GameplayController
       objectReference: {fileID: 0}
-    - target: {fileID: 8954381417999531892, guid: 7fd26004dfb4d0044aafd64c8ed07a9d, type: 3}
-      propertyPath: onEndMiniGame
-      value: 
-      objectReference: {fileID: 11400000, guid: c2d859112858b0648b8a404ed48ad1d2, type: 2}
     - target: {fileID: 8954381417999531893, guid: 7fd26004dfb4d0044aafd64c8ed07a9d, type: 3}
       propertyPath: m_RootOrder
       value: 2
