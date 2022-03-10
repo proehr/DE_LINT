@@ -36,6 +36,11 @@ namespace UIController
         
         private void Awake()
         {
+            InitializeHUDController();
+        }
+
+        protected virtual void InitializeHUDController()
+        {
             onLintCountChanged.RegisterListener(SetLintCountHUDValues);
             onChangeInteractableObjects.RegisterListener(SetInteractableObjects);
             onTriggerQuestLog.RegisterListener(TriggerQuestLog);

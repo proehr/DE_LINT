@@ -22,6 +22,14 @@ namespace InteractionSystem
             }
         }
 
+        private void OnDisable()
+        {
+            if (interactableObjects.IOList.Contains(interactableObject))
+            {
+                interactableObjects.Remove(interactableObject);
+            }
+        }
+
         private void OnTriggerExit(Collider other)
         {
             if (other.CompareTag("Player"))

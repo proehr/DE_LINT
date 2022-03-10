@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cd64a118ac704e93a4bb0c197ba61949, type: 3}
+  m_Name: HeldValue
+  m_EditorClassIdentifier: 
+  value: {fileID: 11400000, guid: cc15ce5293634f24b96c27723de73736, type: 2}
+  onChangeHeldValue: {fileID: 11400000, guid: 7591be155fce098458733b775b4a5515, type: 2}
+  onPickUpValue: {fileID: 11400000, guid: 54f927c73df5dbc4f912d0bea6f5dd62, type: 2}
+  onDropValue: {fileID: 11400000, guid: 0cbc81c6fe150cf4fa24e26e38b9d963, type: 2}
+  onPickUpMemoryAddress: {fileID: 11400000, guid: 9cab4c41782db3f409bae972c024ea36, type: 2}
+  onDropMemoryAddress: {fileID: 11400000, guid: 26620a8840dc930419705799232856ef, type: 2}
+  onPickUpInstruction: {fileID: 11400000, guid: 8f7879e7858a9ea42acf07351dc2c5fb, type: 2}
+  onDropInstruction: {fileID: 11400000, guid: 541937e2ec09f7b449c39c9069597de3, type: 2}

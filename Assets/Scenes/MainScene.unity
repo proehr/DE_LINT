@@ -180,7 +180,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
       propertyPath: gameplayData.Array.size
-      value: 4
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
       propertyPath: gameplayData.Array.data[0]
@@ -198,6 +198,14 @@ PrefabInstance:
       propertyPath: gameplayData.Array.data[3]
       value: 
       objectReference: {fileID: 11400000, guid: 879c7268c4eaf2c469383c7e56e37d9a, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[4]
+      value: 
+      objectReference: {fileID: 11400000, guid: c0d4d74d8f17ffe44a8ccec6fe7c2ca7, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[5]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4ddb4f2307c40584b8492f4b8881698d, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b08b6f84310397540b7f77174dac861d, type: 3}
 --- !u!1 &508123654 stripped
