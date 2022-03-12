@@ -39,7 +39,7 @@ namespace LintCollection
 
         private void RemoveFromEnvironment()
         {
-            Destroy(gameObject);
+            gameObject.SetActive(false);
         }
     }
 }

@@ -35,6 +35,7 @@ namespace LintCollection
             normalLintCount.value += value;
             RecalcLintCounts();
             onLintCountChanged.Raise();
+            CheckBigLint();
         }
 
         public void AddBigLint(int value)
@@ -42,6 +43,7 @@ namespace LintCollection
             bigLintCount.value += value;
             RecalcLintCounts();
             onLintCountChanged.Raise();
+            CheckBigLint();
         }
 
         private void RecalcLintCounts()
