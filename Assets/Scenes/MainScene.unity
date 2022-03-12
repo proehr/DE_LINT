@@ -184,7 +184,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: beb65f3a26e643749871ca15d7777f94, type: 2}
     - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
       propertyPath: gameplayData.Array.size
-      value: 24
+      value: 42
       objectReference: {fileID: 0}
     - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
       propertyPath: gameplayData.Array.data[0]
@@ -201,7 +201,7 @@ PrefabInstance:
     - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
       propertyPath: gameplayData.Array.data[3]
       value: 
-      objectReference: {fileID: 11400000, guid: 879c7268c4eaf2c469383c7e56e37d9a, type: 2}
+      objectReference: {fileID: 11400000, guid: 7a6c65e9bb47107448402ee5b0138e9a, type: 2}
     - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
       propertyPath: gameplayData.Array.data[4]
       value: 
@@ -282,6 +282,78 @@ PrefabInstance:
       propertyPath: gameplayData.Array.data[23]
       value: 
       objectReference: {fileID: 11400000, guid: ec3292ede3f4b0049a6173e2f1385e5f, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[24]
+      value: 
+      objectReference: {fileID: 11400000, guid: c02c49e56db022f46ba625a4aa769013, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[25]
+      value: 
+      objectReference: {fileID: 11400000, guid: 04f2ea3fe816da04e92b81c66de12025, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[26]
+      value: 
+      objectReference: {fileID: 11400000, guid: 25bb02c97b174ca4daee4fec0d404016, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[27]
+      value: 
+      objectReference: {fileID: 11400000, guid: f6117c34dc3d3dc4382dfcba7606596c, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[28]
+      value: 
+      objectReference: {fileID: 11400000, guid: 16ee94c3c3dbffc4d92cb11723877594, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[29]
+      value: 
+      objectReference: {fileID: 11400000, guid: 26215c0f866ea8b47bbb4fee5ce924b7, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[30]
+      value: 
+      objectReference: {fileID: 11400000, guid: f3448c0f7606aef48bb902949b3b0314, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[31]
+      value: 
+      objectReference: {fileID: 11400000, guid: 33a2621107d5ad942b2a91a6322d7f85, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[32]
+      value: 
+      objectReference: {fileID: 11400000, guid: a4c68c0a63e727e4e9dfe16137932e5c, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[33]
+      value: 
+      objectReference: {fileID: 11400000, guid: c973fd1ea314eb4478c7fc44532a781d, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[34]
+      value: 
+      objectReference: {fileID: 11400000, guid: 2abedeadb613a9e46ae3cb5af2165c90, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[35]
+      value: 
+      objectReference: {fileID: 11400000, guid: 492ea4440030ced4ea6438b47123c2a1, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[36]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4afa5a52658bff9468a23d04a16a2340, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[37]
+      value: 
+      objectReference: {fileID: 11400000, guid: f4aa2fa5fdf7f974ba579f28a4111ca6, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[38]
+      value: 
+      objectReference: {fileID: 11400000, guid: dd440693fc27d744baec48cbfd3a92bf, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[39]
+      value: 
+      objectReference: {fileID: 11400000, guid: 43c11181ce81add4ab11d66a614e5e03, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[40]
+      value: 
+      objectReference: {fileID: 11400000, guid: 8ee37716b53d34b4f965f9dde8ffb990, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[41]
+      value: 
+      objectReference: {fileID: 11400000, guid: 68659838f18487047be9ff8e3a4fd370, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b08b6f84310397540b7f77174dac861d, type: 3}
 --- !u!1001 &1812997753
@@ -291,6 +363,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 584357577, guid: 057d4e6894ad6c447ad3bf134735a9bc, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5483033636715386641, guid: 057d4e6894ad6c447ad3bf134735a9bc, type: 3}
       propertyPath: m_Name
       value: GameController
@@ -339,6 +415,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5483288971995442615, guid: 057d4e6894ad6c447ad3bf134735a9bc, type: 3}
+      propertyPath: questList
+      value: 
+      objectReference: {fileID: 11400000, guid: 4d47c76499ceca442a77280e19af2cac, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 057d4e6894ad6c447ad3bf134735a9bc, type: 3}
 --- !u!1 &1885732345

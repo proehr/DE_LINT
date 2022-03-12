@@ -15,11 +15,7 @@ namespace Quest
         
         [SerializeField] private IntVariable currentQuestStep;
         [SerializeField] private QuestLog_SO questLog;
-
-        public void OnEnable()
-        {
-            QuestList.quests.Add(questName, this);
-        }
+        [SerializeField] private QuestList_SO questList;
 
         public string QuestName => questName;
 

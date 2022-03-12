@@ -11,6 +11,7 @@ namespace GameplayController
         [SerializeField] private EnvironmentSpaces environmentSpaces;
         [SerializeField] private EnvironmentSpace explorationSpace;
         [SerializeField] private GameObject dialogueController;
+        [SerializeField] private GameObject questController;
         [SerializeField] private GameObject storyController;
 
         private void OnEnable()
@@ -18,6 +19,7 @@ namespace GameplayController
             onFinishInstructionCycleGame.RegisterListener(BackToExplorationSpace);
             dialogueController.SetActive(true);
             environmentSpaces.gameObject.SetActive(true);
+            questController.SetActive(true);
             storyController.SetActive(true);
         }
 
@@ -26,6 +28,7 @@ namespace GameplayController
             onFinishInstructionCycleGame.RegisterListener(BackToExplorationSpace);
             dialogueController.SetActive(false);
             environmentSpaces.gameObject.SetActive(false);
+            questController.SetActive(false);
             storyController.SetActive(false);
         }
 

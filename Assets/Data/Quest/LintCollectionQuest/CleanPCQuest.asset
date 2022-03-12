@@ -18,3 +18,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 986bc545501fd6543969e9cc31a7379f, type: 2}
   currentQuestStep: {fileID: 11400000, guid: eb5c3aaee8eeab24db5dd9b8b9f6b16f, type: 2}
   questLog: {fileID: 11400000, guid: 879c7268c4eaf2c469383c7e56e37d9a, type: 2}
+  questList: {fileID: 11400000, guid: 4d47c76499ceca442a77280e19af2cac, type: 2}

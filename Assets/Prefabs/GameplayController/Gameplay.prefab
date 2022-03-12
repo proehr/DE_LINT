@@ -30,8 +30,8 @@ Transform:
   m_Children:
   - {fileID: 5305308209909261026}
   - {fileID: 2807250874007590418}
-  - {fileID: 6535006453646507235}
   - {fileID: 1632994644823574489}
+  - {fileID: 6535006453646507235}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -51,6 +51,7 @@ MonoBehaviour:
   environmentSpaces: {fileID: 6535006453296840171}
   explorationSpace: {fileID: 6535006452332925252}
   dialogueController: {fileID: 8225966353423594564}
+  questController: {fileID: 1632994644823574495}
   storyController: {fileID: 6535006453646507232}
 --- !u!1001 &572278450509608518
 PrefabInstance:
@@ -65,11 +66,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1249937796906316185, guid: d6db0dd04e2efce40bb5ec73f935a0da, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1249937796906316191, guid: d6db0dd04e2efce40bb5ec73f935a0da, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 1249937796906316191, guid: d6db0dd04e2efce40bb5ec73f935a0da, type: 3}
       propertyPath: m_LocalPosition.x
@@ -113,6 +114,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d6db0dd04e2efce40bb5ec73f935a0da, type: 3}
+--- !u!1 &1632994644823574495 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1249937796906316185, guid: d6db0dd04e2efce40bb5ec73f935a0da, type: 3}
+  m_PrefabInstance: {fileID: 572278450509608518}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1632994644823574489 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1249937796906316191, guid: d6db0dd04e2efce40bb5ec73f935a0da, type: 3}
@@ -139,7 +145,7 @@ PrefabInstance:
       objectReference: {fileID: 6535006452309770631}
     - target: {fileID: 5060455280797486253, guid: 22d5d8ae7ca4e624180a4a16f2afc26c, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5060455280797486253, guid: 22d5d8ae7ca4e624180a4a16f2afc26c, type: 3}
       propertyPath: m_LocalPosition.x
@@ -275,6 +281,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 6535006452776271011}
     m_Modifications:
+    - target: {fileID: 2070925442363372189, guid: 7fd26004dfb4d0044aafd64c8ed07a9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8944336655838176024, guid: 7fd26004dfb4d0044aafd64c8ed07a9d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -4
+      objectReference: {fileID: 0}
     - target: {fileID: 8954381417999531891, guid: 7fd26004dfb4d0044aafd64c8ed07a9d, type: 3}
       propertyPath: m_Name
       value: EnvironmentSpaces

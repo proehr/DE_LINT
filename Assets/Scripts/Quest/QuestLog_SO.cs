@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using DataStructures.Variables;
 using UnityEngine;
 
 namespace Quest
@@ -8,14 +9,15 @@ namespace Quest
     [CreateAssetMenu(fileName = "QuestLog", menuName = "Quest/QuestLog", order = 0)]
     public class QuestLog_SO : ScriptableObject
     {
-        [SerializeField] private List<String> activeQuests = new List<String>();
+        [SerializeField] private StringListVariable activeQuests;
+        [SerializeField] private QuestList_SO questList;
 
         public List<Quest_SO> GetActiveQuests()
         {
             List<Quest_SO> returnList = new List<Quest_SO>();
-            foreach (String name in activeQuests)
+            foreach (String questName in activeQuests.value)
             {
-                returnList.Add(QuestList.quests[name]);
+                returnList.Add(questList.quests[questName]);
             }
 
             return returnList;
@@ -23,18 +25,18 @@ namespace Quest
 
         public void ActivateQuest(Quest_SO quest)
         {
-            if (!activeQuests.Contains(quest.QuestName))
+            if (!activeQuests.value.Contains(quest.QuestName))
             {
-                activeQuests.Add(quest.QuestName);
+                activeQuests.value.Add(quest.QuestName);
             }
             quest.GetCurrentQuestStep().OnFinishTask.RegisterListener(quest.NextStep);
         }
 
         public void DeactivateQuest(Quest_SO quest)
         {
-            if (activeQuests.Contains(quest.QuestName))
+            if (activeQuests.value.Contains(quest.QuestName))
             {
-                activeQuests.Remove(quest.QuestName);
+                activeQuests.value.Remove(quest.QuestName);
             }
         }
     }

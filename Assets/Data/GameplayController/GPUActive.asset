@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e7d38348aa84ddcb60bd97a3153ed8d, type: 3}
   m_Name: GPUActive
   m_EditorClassIdentifier: 
-  value: 0
+  value: 1
