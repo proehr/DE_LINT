@@ -12,7 +12,10 @@ namespace Story
 
         private void OnEnable()
         {
-            LoadCurrentStory();
+            if (currentStoryStage.value < storyEvents.Count)
+            {
+                LoadCurrentStory();
+            }
         }
 
         private void NextStory()

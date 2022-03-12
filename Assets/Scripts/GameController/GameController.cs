@@ -1,4 +1,5 @@
 using DataStructures.Events;
+using Environment;
 using UIController;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -22,7 +23,7 @@ namespace GameController
         [SerializeField] private GameObject pauseScreenCanvas;
         [SerializeField] private GameObject gameplayController;
         [SerializeField] private GameObject dialogueController;
-        [SerializeField] private GameObject environmentSpaces;
+        [SerializeField] private EnvironmentSpaces environmentSpaces;
         [SerializeField] private GameObject storyController;
 
         private void Awake()
@@ -34,12 +35,12 @@ namespace GameController
             onBackToStartScreen.RegisterListener(BackToStartScreen);
             onExit.RegisterListener(ExitGame); ;
 
-            InitializeStateMachine(new StartScreenState(startScreenCanvas, saveFilePicker));
+            InitializeStateMachine(new StartScreenState(startScreenCanvas, saveFilePicker, gameplayController, dialogueController, environmentSpaces, storyController));
         }
 
         private void StartGameplay()
         {
-            TransitionTo(new GameplayState(gameplayController, dialogueController, environmentSpaces, storyController));
+            TransitionTo(new GameplayState(environmentSpaces));
         }
         
         private void PauseGame()
@@ -49,7 +50,7 @@ namespace GameController
         
         private void ResumeGame()
         {
-            TransitionTo(new GameplayState(gameplayController, dialogueController, environmentSpaces, storyController));
+            TransitionTo(new GameplayState(environmentSpaces));
         }
         
         private void EndGame()
@@ -59,7 +60,7 @@ namespace GameController
         
         private void BackToStartScreen()
         {
-            TransitionTo(new StartScreenState(startScreenCanvas, saveFilePicker));
+            TransitionTo(new StartScreenState(startScreenCanvas, saveFilePicker, gameplayController, dialogueController, environmentSpaces, storyController));
         }
 
         private void ExitGame()

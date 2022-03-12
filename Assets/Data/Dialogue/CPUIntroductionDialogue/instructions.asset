@@ -9,6 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: acf2c0faca0f44bfa39d781afde149d7, type: 3}
-  m_Name: GameplayControllerState
+  m_Script: {fileID: 11500000, guid: ec0f20d82c07467f82258881da5e5116, type: 3}
+  m_Name: instructions
   m_EditorClassIdentifier: 
+  dialogueOptionText: What do those instructions look like?
+  nextDialogueStep: {fileID: 11400000, guid: b6225a432d29ba34c8c96d04a71bb3fe, type: 2}

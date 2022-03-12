@@ -12,8 +12,11 @@ namespace MiniGames.InstructionCycle.InstructionCycleObjects
         [SerializeField] private TMP_Text text;
         [SerializeField] private Image valueObjectBackground;
 
+        private BaseValue originalValue;
+
         private void Awake()
         {
+            originalValue = value;
             SetTextAndBackground();
         }
 
@@ -40,6 +43,11 @@ namespace MiniGames.InstructionCycle.InstructionCycleObjects
         internal BaseValue GetValue()
         {
             return value;
+        }
+
+        internal void ResetValueObject()
+        {
+            SetValue(originalValue);
         }
     }
 }

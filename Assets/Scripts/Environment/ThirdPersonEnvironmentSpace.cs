@@ -11,17 +11,17 @@ namespace Environment
 
         internal void DeactivateThirdPersonInput()
         {
-            thirdPersonInput.ActivateInput();
-            gameplayInputManager.cursorLocked = true;
-            gameplayInputManager.cursorInputForLook = true;
+            thirdPersonInput.DeactivateInput();
+            gameplayInputManager.cursorLocked = false;
+            gameplayInputManager.cursorInputForLook = false;
             gameplayInputManager.ResetCursorState();
         }
 
         internal void ActivateThirdPersonInput()
         {
-            thirdPersonInput.DeactivateInput();
-            gameplayInputManager.cursorLocked = false;
-            gameplayInputManager.cursorInputForLook = false;
+            thirdPersonInput.ActivateInput();
+            gameplayInputManager.cursorLocked = true;
+            gameplayInputManager.cursorInputForLook = true;
             gameplayInputManager.ResetCursorState();
         }
     }

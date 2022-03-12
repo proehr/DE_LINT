@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99cf065fd0d544a5a1f86126db664c96, type: 3}
+  m_Name: LintaIntro2
+  m_EditorClassIdentifier: 
+  message: My Name is Linta! And... oh, it looks like your PC just crashed. I hope
+    you know enough about your PC to clean it up and figure out what's wrong, so
+    that this doesn't happen again.
+  dialogueCharacter: {fileID: 11400000, guid: f0186c31d789f824abaa85641b49a805, type: 2}
+  dialogueOptions:
+  - {fileID: 11400000, guid: 4bc4542c08db73440b6e16fc1dfe8f66, type: 2}
+  - {fileID: 11400000, guid: 66e87d4b7bac8fd4680224d6e9d4f8d7, type: 2}

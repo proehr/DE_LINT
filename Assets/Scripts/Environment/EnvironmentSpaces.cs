@@ -8,14 +8,14 @@ namespace Environment
 {
     public class EnvironmentSpaces : MonoBehaviour
     {
-        [SerializeField] private List<EnvironmentSpace> spaces;
-        [SerializeField] private IntVariable currentSpace;
+        [SerializeField] internal List<EnvironmentSpace> spaces;
+        [SerializeField] internal IntVariable currentSpace;
 
         [SerializeField] private GameEvent onStartDialogue;
         [SerializeField] private GameEvent onEndDialogue;
 
         [SerializeField] private GameEvent onEndSpaceTransition;
-        
+
         private void OnEnable()
         {
             foreach (EnvironmentSpace space in spaces)
@@ -39,6 +39,7 @@ namespace Environment
             spaces[currentSpace.value].gameObject.SetActive(false);
             if (spaces[currentSpace.value].GetType() == typeof(ThirdPersonEnvironmentSpace))
             {
+                ((ThirdPersonEnvironmentSpace) spaces[currentSpace.value]).DeactivateThirdPersonInput();
                 onStartDialogue.UnregisterListener(((ThirdPersonEnvironmentSpace)spaces[currentSpace.value]).DeactivateThirdPersonInput);
                 onEndDialogue.UnregisterListener(((ThirdPersonEnvironmentSpace)spaces[currentSpace.value]).ActivateThirdPersonInput);
             }
@@ -49,6 +50,7 @@ namespace Environment
             spaces[currentSpace.value].gameObject.SetActive(true);
             if (spaces[currentSpace.value].GetType() == typeof(ThirdPersonEnvironmentSpace))
             {
+                ((ThirdPersonEnvironmentSpace) spaces[currentSpace.value]).ActivateThirdPersonInput();
                 onStartDialogue.RegisterListener(((ThirdPersonEnvironmentSpace)spaces[currentSpace.value]).DeactivateThirdPersonInput);
                 onEndDialogue.RegisterListener(((ThirdPersonEnvironmentSpace)spaces[currentSpace.value]).ActivateThirdPersonInput);
             }

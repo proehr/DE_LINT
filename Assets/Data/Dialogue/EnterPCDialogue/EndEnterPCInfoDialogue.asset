@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95414872f1944f9db2ad7d2971f97dc9, type: 3}
+  m_Name: EndEnterPCInfoDialogue
+  m_EditorClassIdentifier: 
+  dialogueEvents:
+  - {fileID: 11400000, guid: 0d13f1e0ab92a874782763ff4a76a4f5, type: 2}
+  - {fileID: 11400000, guid: 5e0f4b173ea1b7a45b2cbf806ac25563, type: 2}
+  - {fileID: 11400000, guid: e26f5e17e66b46447acfa8c87953bed5, type: 2}

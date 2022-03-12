@@ -11,6 +11,7 @@ namespace Dialogue
         [SerializeField] private String message;
         [SerializeField] private DialogueCharacter_SO dialogueCharacter;
         [SerializeField] private List<DialogueOption_SO> dialogueOptions = new List<DialogueOption_SO>();
+        [SerializeField] private List<GameEvent> loadImageEvents = new List<GameEvent>();
 
         internal string Message => message;
 
@@ -18,5 +19,6 @@ namespace Dialogue
 
         internal List<DialogueOption_SO> DialogueOptions => dialogueOptions;
 
+        internal List<GameEvent> LoadImageEvents => loadImageEvents;
     }
 }

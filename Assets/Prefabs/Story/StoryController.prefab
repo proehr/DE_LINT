@@ -1,5 +1,99 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1845148055
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1845148056}
+  - component: {fileID: 1845148057}
+  m_Layer: 0
+  m_Name: PlugAPCMiniGameEvent
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1845148056
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845148055}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5060455280797486253}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1845148057
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1845148055}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6618b587d2814685af0d25454482c4b6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onStartStoryEvents: []
+  onEndStoryEvent: {fileID: 11400000, guid: bfbdb60bd0966fb4c8e2db18eac8e0c0, type: 2}
+  targetEnvironmentSpace: {fileID: 0}
+  environmentSpaces: {fileID: 0}
+--- !u!1 &2077594387
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2077594388}
+  - component: {fileID: 2077594389}
+  m_Layer: 0
+  m_Name: EnterPCDialogue
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2077594388
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077594387}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 5060455280797486253}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2077594389
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077594387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d1751e51aec14483ad81cba99c4531a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  onStartStoryEvents:
+  - {fileID: 11400000, guid: ac839565b21bd264297bf0a7668bf1ba, type: 2}
+  onEndStoryEvent: {fileID: 11400000, guid: 0d13f1e0ab92a874782763ff4a76a4f5, type: 2}
+  initialDialogueMessage: {fileID: 11400000, guid: 5eac0cff73f9ff1408db86e95373edfb, type: 2}
 --- !u!1 &5060455280396847872
 GameObject:
   m_ObjectHideFlags: 0
@@ -46,7 +140,7 @@ MonoBehaviour:
   onStartStoryEvents:
   - {fileID: 11400000, guid: ac839565b21bd264297bf0a7668bf1ba, type: 2}
   onEndStoryEvent: {fileID: 11400000, guid: 0d13f1e0ab92a874782763ff4a76a4f5, type: 2}
-  initialDialogueMessage: {fileID: 11400000, guid: 290033f1fcc068b4bbf0ab20d2bf39cf, type: 2}
+  initialDialogueMessage: {fileID: 11400000, guid: 81f9588885a5c5a4c8f8c4c77746fa20, type: 2}
 --- !u!1 &5060455280797486254
 GameObject:
   m_ObjectHideFlags: 0
@@ -63,7 +157,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5060455280797486253
 Transform:
   m_ObjectHideFlags: 0
@@ -71,11 +165,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5060455280797486254}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -3.7755878, y: 0.7691424, z: -6.2767944}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 5060455280396847887}
+  - {fileID: 1845148056}
+  - {fileID: 2077594388}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -94,4 +190,6 @@ MonoBehaviour:
   storyEvents:
   - {fileID: 0}
   - {fileID: 5060455280396847886}
+  - {fileID: 1845148057}
+  - {fileID: 2077594389}
   currentStoryStage: {fileID: 11400000, guid: c0d4d74d8f17ffe44a8ccec6fe7c2ca7, type: 2}

@@ -1,0 +1,26 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99cf065fd0d544a5a1f86126db664c96, type: 3}
+  m_Name: CPUGPUInfo
+  m_EditorClassIdentifier: 
+  message: The CPU is often called the "Brain" of your PC. It performs basic arithmetic,
+    logic, controlling and Input/Output operations by reading instructions from a
+    program in the primary storage. The graphics card contains a Graphics Processing
+    Unit (GPU) which is an expansion to your CPU and is specialised to efficiently
+    manipulate computer graphics.
+  dialogueCharacter: {fileID: 11400000, guid: f0186c31d789f824abaa85641b49a805, type: 2}
+  dialogueOptions:
+  - {fileID: 11400000, guid: 96f09c6ed318103439b887dcead8caaa, type: 2}
+  - {fileID: 11400000, guid: 3a9b7536a13a5d0429379701d9fe1787, type: 2}
+  - {fileID: 11400000, guid: a45cdf15611cece488fb580df56e114d, type: 2}
+  loadImageEvents:
+  - {fileID: 11400000, guid: 77463ea008255f143bd34bdc4c6c33bc, type: 2}

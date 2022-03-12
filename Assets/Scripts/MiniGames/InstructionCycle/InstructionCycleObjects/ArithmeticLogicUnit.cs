@@ -94,5 +94,14 @@ namespace MiniGames.InstructionCycle.InstructionCycleObjects
                 go.SetActive(false);
             }
         }
+
+        internal void ResetValues()
+        {
+            valueOne.ResetValueObject();
+            valueTwo.ResetValueObject();
+            resultValue.ResetValueObject();
+            DeactivateGameObject(calculateSumInteractableObject.gameObject);
+            DeactivateGameObject(pickUpResultInteractableObject.gameObject);
+        }
     }
 }

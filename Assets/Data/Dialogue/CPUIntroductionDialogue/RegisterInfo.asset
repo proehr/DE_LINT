@@ -1,0 +1,24 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99cf065fd0d544a5a1f86126db664c96, type: 3}
+  m_Name: RegisterInfo
+  m_EditorClassIdentifier: 
+  message: Registers are small storage units. Since they are placed inside the CPU,
+    read and write operations on registers are very fast. The most important registers
+    are the Program Counter and the Instruction Register. The Program Counter holds
+    the memory address of the next instruction that is supposed to be executed. When
+    the CPU fetches this instruction it is saved into the Instruction Register.
+  dialogueCharacter: {fileID: 11400000, guid: f0186c31d789f824abaa85641b49a805, type: 2}
+  dialogueOptions:
+  - {fileID: 11400000, guid: 2c3855083c3568e49b91751cd0033732, type: 2}
+  - {fileID: 11400000, guid: 33229cd5994623b4297c7f94ef18d040, type: 2}
+  - {fileID: 11400000, guid: c9b4cc81072b4d24983d93fbe69bce7c, type: 2}

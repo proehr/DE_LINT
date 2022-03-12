@@ -6,7 +6,7 @@ namespace StateMachine
 {
     internal abstract class StateMachine : MonoBehaviour
     {
-        [SerializeField] private CurrentState_SO currentStateSO;
+        [SerializeField] internal CurrentState_SO currentStateSO;
 
         protected void InitializeStateMachine(IState initialState)
         {

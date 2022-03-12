@@ -1,4 +1,5 @@
-﻿using DataStructures.Events;
+﻿using System.Linq;
+using DataStructures.Events;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
@@ -59,6 +60,11 @@ namespace Dialogue
                     optionButton.onClick.AddListener(dialogueOption.QueueNextDialogueMessage);
                     optionButton.onClick.AddListener(StartNextDialogueStep);
                     optionButton.GetComponentInChildren<TMP_Text>().text = dialogueOption.DialogueOptionText;
+                }
+
+                foreach (GameEvent loadImageEvent in message.LoadImageEvents)
+                {
+                    loadImageEvent.Raise();
                 }
             }
             else if (currentDialogueStep.GetType() == typeof(DialogueEvent_SO))

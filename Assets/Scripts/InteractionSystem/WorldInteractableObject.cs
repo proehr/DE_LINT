@@ -6,7 +6,6 @@ namespace InteractionSystem
     {
         protected internal override void Interact()
         {
-            transform.position += Vector3.up;
             base.Interact();
         }
     }

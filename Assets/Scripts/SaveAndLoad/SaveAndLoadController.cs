@@ -13,6 +13,7 @@ namespace SaveAndLoad
     {
         [SerializeField] private GameEvent onSaveGameplayData;
         [SerializeField] private GameEvent onLoadGameplayData;
+        [SerializeField] private GameEvent onLoadFromTemplate;
         [SerializeField] private IntVariable saveFileNumber;
         [SerializeField] private List<ScriptableObject> gameplayData;
 
@@ -27,8 +28,50 @@ namespace SaveAndLoad
 
         private void Awake()
         {
+            CreateTemplateSave();
+
             onSaveGameplayData.RegisterListener(Save);
             onLoadGameplayData.RegisterListener(Load);
+            onLoadFromTemplate.RegisterListener(LoadFromTemplate);
+        }
+
+        private void CreateTemplateSave()
+        {
+            String dataPath = Path.Combine(Application.persistentDataPath, "template");
+            try
+            {
+                if (!Directory.Exists(dataPath))
+                {
+                    Directory.CreateDirectory(dataPath);
+                    foreach (ScriptableObject data in gameplayData)
+                    {
+                        BinaryFormatter binaryFormatter = new BinaryFormatter();
+                        FileStream fileStream;
+                        String filePath = Path.Combine(dataPath, data.name + ".dat");
+                        if (!File.Exists(filePath))
+                        {
+                            fileStream = File.Create(filePath);
+                        }
+                        else
+                        {
+                            File.WriteAllText(filePath, string.Empty);
+                            fileStream = File.Open(filePath, FileMode.Open);
+                        }
+
+                        binaryFormatter.Serialize(fileStream, JsonUtility.ToJson(data));
+                        fileStream.Close();
+                    }
+
+                    if (Application.platform == RuntimePlatform.WebGLPlayer)
+                    {
+                        SyncFiles();
+                    }
+                }
+            }
+            catch (Exception e)
+            {
+                PlatformSafeMessage("Failed to Save: " + e.Message);
+            }
         }
 
         public void Save()
@@ -82,7 +125,7 @@ namespace SaveAndLoad
                 {
                     foreach (ScriptableObject data in gameplayData)
                     {
-                        String filePath = Path.Combine(dataPath,data.name + ".dat");
+                        String filePath = Path.Combine(dataPath, data.name + ".dat");
                         if (File.Exists(filePath))
                         {
                             BinaryFormatter binaryFormatter = new BinaryFormatter();
@@ -97,6 +140,31 @@ namespace SaveAndLoad
             catch (Exception e)
             {
                 PlatformSafeMessage("Failed to Load: " + e.Message);
+            }
+        }
+
+        public void LoadFromTemplate()
+        {
+            String templateDataPath = Path.Combine(Application.persistentDataPath, "template");
+            String newDataPath = Path.Combine(Application.persistentDataPath, dataDirectoryName + saveFileNumber.value);
+            if (!Directory.Exists(newDataPath))
+            {
+                Directory.CreateDirectory(newDataPath);
+            }
+            CopyFilesRecursively(templateDataPath, newDataPath);
+            Load();
+        }
+        
+        private static void CopyFilesRecursively(string sourcePath, string targetPath)
+        {
+            foreach (string dirPath in Directory.GetDirectories(sourcePath, "*", SearchOption.AllDirectories))
+            {
+                Directory.CreateDirectory(dirPath.Replace(sourcePath, targetPath));
+            }
+
+            foreach (string newPath in Directory.GetFiles(sourcePath, "*.*",SearchOption.AllDirectories))
+            {
+                File.Copy(newPath, newPath.Replace(sourcePath, targetPath), true);
             }
         }
 

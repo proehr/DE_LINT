@@ -134,7 +134,7 @@ MonoBehaviour:
   pauseScreenCanvas: {fileID: 920070469633762589}
   gameplayController: {fileID: 584357577}
   dialogueController: {fileID: 2925511743245983277}
-  environmentSpaces: {fileID: 8954381419437194365}
+  environmentSpaces: {fileID: 1106073474}
   storyController: {fileID: 1849022089}
 --- !u!1001 &942214664
 PrefabInstance:
@@ -368,6 +368,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 5483033636715386655}
     m_Modifications:
+    - target: {fileID: 2807250874007590420, guid: b4cd8828812aeac4aae5844795b69319, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6535006452776271008, guid: b4cd8828812aeac4aae5844795b69319, type: 3}
       propertyPath: m_Name
       value: Gameplay
@@ -433,11 +437,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8225966353423594564, guid: b4cd8828812aeac4aae5844795b69319, type: 3}
   m_PrefabInstance: {fileID: 6535006452200368745}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &8954381419437194365 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2807250874007590420, guid: b4cd8828812aeac4aae5844795b69319, type: 3}
+--- !u!114 &1106073474 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6535006453296840171, guid: b4cd8828812aeac4aae5844795b69319, type: 3}
   m_PrefabInstance: {fileID: 6535006452200368745}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6eb9fcd94f664ae68f98d8fc979e0aa9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1849022089 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 6535006453646507232, guid: b4cd8828812aeac4aae5844795b69319, type: 3}

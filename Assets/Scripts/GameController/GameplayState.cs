@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Environment;
 using StateMachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -8,36 +9,30 @@ namespace GameController
 {
     public class GameplayState : IState
     {
+        private readonly EnvironmentSpaces environmentSpaces;
 
-        private readonly GameObject gameplayController;
-        private readonly GameObject dialogueController;
-        private readonly GameObject environmentSpaces;
-        private readonly GameObject storyController;
-
-        public GameplayState(GameObject gameplayController, GameObject dialogueController, GameObject environmentSpaces, GameObject storyController)
+        public GameplayState(EnvironmentSpaces environmentSpaces)
         {
-            this.gameplayController = gameplayController;
-            this.dialogueController = dialogueController;
             this.environmentSpaces = environmentSpaces;
-            this.storyController = storyController;
         }
-        
+
         public void Enter()
         {
             Debug.Log("Enter " + this.GetType().FullName);
-            gameplayController.SetActive(true);
-            dialogueController.SetActive(true);
-            environmentSpaces.SetActive(true);
-            storyController.SetActive(true);
+            if (environmentSpaces.spaces[environmentSpaces.currentSpace.value] is ThirdPersonEnvironmentSpace)
+            {
+                ((ThirdPersonEnvironmentSpace) environmentSpaces.spaces[environmentSpaces.currentSpace.value])
+                    .ActivateThirdPersonInput();
+            }
         }
 
         public void Exit()
         {
-            Debug.Log("Exit " + this.GetType().FullName);
-            gameplayController.SetActive(false);
-            dialogueController.SetActive(false);
-            environmentSpaces.SetActive(false);
-            storyController.SetActive(false);
+            if (environmentSpaces.spaces[environmentSpaces.currentSpace.value] is ThirdPersonEnvironmentSpace)
+            {
+                ((ThirdPersonEnvironmentSpace) environmentSpaces.spaces[environmentSpaces.currentSpace.value])
+                    .DeactivateThirdPersonInput();
+            }
         }
 
         private readonly List<Type> nextStates = new List<Type> {typeof(PauseScreenState), typeof(EndScreenState)};

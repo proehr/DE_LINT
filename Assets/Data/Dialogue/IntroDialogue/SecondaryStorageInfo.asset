@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99cf065fd0d544a5a1f86126db664c96, type: 3}
+  m_Name: SecondaryStorageInfo
+  m_EditorClassIdentifier: 
+  message: 'Secondary storage can not be accessed directly by the CPU, but unlike
+    the primary storage, it is non-volatile. This means, the stored data is retained
+    even when the power is shut off. The PC you have here contains two types of secondary
+    storage: A hard disk drive (HDD) and a solid-state drive (SSD). SSDs make use
+    of a more modern approach to storage, which allows faster data access, but also
+    makes SSDs more expensive.'
+  dialogueCharacter: {fileID: 11400000, guid: f0186c31d789f824abaa85641b49a805, type: 2}
+  dialogueOptions:
+  - {fileID: 11400000, guid: 38e794dcea25a2443980329ff3e99ad3, type: 2}
+  - {fileID: 11400000, guid: 96f09c6ed318103439b887dcead8caaa, type: 2}
+  - {fileID: 11400000, guid: a45cdf15611cece488fb580df56e114d, type: 2}
+  loadImageEvents:
+  - {fileID: 11400000, guid: 7ed9e880988aca14e963c42a513a6600, type: 2}

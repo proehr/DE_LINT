@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99cf065fd0d544a5a1f86126db664c96, type: 3}
+  m_Name: LintaIntro
+  m_EditorClassIdentifier: 
+  message: Woah! Your computer fan just went full power and threw me out!
+  dialogueCharacter: {fileID: 11400000, guid: 01b0552c303638045917ddb9e3896d5d, type: 2}
+  dialogueOptions:
+  - {fileID: 11400000, guid: af0587685fb9cde4ebc157e39c28270f, type: 2}

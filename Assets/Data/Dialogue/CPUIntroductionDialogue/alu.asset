@@ -1,0 +1,16 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ec0f20d82c07467f82258881da5e5116, type: 3}
+  m_Name: alu
+  m_EditorClassIdentifier: 
+  dialogueOptionText: Tell me more about the ALU.
+  nextDialogueStep: {fileID: 11400000, guid: c9de041eee95f6d4392fc2a98ec4af37, type: 2}

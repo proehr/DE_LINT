@@ -12,7 +12,7 @@ namespace MiniGames.InstructionCycle.InstructionCycleObjects
         {
             BaseValue memoryAddress = ScriptableObject.CreateInstance<MemoryAddress>();
             memoryAddress.value = memoryBus.GetNextInstructionAddressValue(register.storedValueObject.GetValue().value);
-            memoryAddress.valueName = "Memory Address" + memoryAddress.value;
+            memoryAddress.valueName = "Memory Address " + memoryAddress.value;
             register.storedValueObject.SetValue(memoryAddress);
             base.Interact();
         }
