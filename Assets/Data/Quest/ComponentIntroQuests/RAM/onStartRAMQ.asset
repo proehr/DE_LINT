@@ -9,7 +9,6 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 365327de666b4d5ca7028e1ceaa8e5ba, type: 3}
-  m_Name: QuestLog
+  m_Script: {fileID: 11500000, guid: c939a1559d064d1ab01a580af5e3f0bf, type: 3}
+  m_Name: onStartRAMQ
   m_EditorClassIdentifier: 
-  activeQuests: []

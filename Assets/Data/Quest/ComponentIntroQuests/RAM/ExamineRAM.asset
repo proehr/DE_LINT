@@ -9,6 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c939a1559d064d1ab01a580af5e3f0bf, type: 3}
-  m_Name: onFinishPSIntroDialogue
+  m_Script: {fileID: 11500000, guid: a41ff8ddffa543869c6805709f7d45b6, type: 3}
+  m_Name: ExamineRAM
   m_EditorClassIdentifier: 
+  description: Examine the Primary Storage
+  onFinishTask: {fileID: 11400000, guid: c0cc2464ae1bd664ab454a13d8032fe7, type: 2}

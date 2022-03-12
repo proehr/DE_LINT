@@ -19,19 +19,19 @@ namespace GameController
         public void Enter()
         {
             Debug.Log("Enter " + this.GetType().FullName);
-            if (environmentSpaces.spaces[environmentSpaces.currentSpace.value] is ThirdPersonEnvironmentSpace)
+            if (environmentSpaces.spaces[environmentSpaces.currentSpace.value] is ThirdPersonEnvironmentSpace
+                thirdPersonEnvironmentSpace)
             {
-                ((ThirdPersonEnvironmentSpace) environmentSpaces.spaces[environmentSpaces.currentSpace.value])
-                    .ActivateThirdPersonInput();
+                thirdPersonEnvironmentSpace.ActivateThirdPersonInput();
             }
         }
 
         public void Exit()
         {
-            if (environmentSpaces.spaces[environmentSpaces.currentSpace.value] is ThirdPersonEnvironmentSpace)
+            if (environmentSpaces.spaces[environmentSpaces.currentSpace.value] is ThirdPersonEnvironmentSpace
+                thirdPersonEnvironmentSpace)
             {
-                ((ThirdPersonEnvironmentSpace) environmentSpaces.spaces[environmentSpaces.currentSpace.value])
-                    .DeactivateThirdPersonInput();
+                thirdPersonEnvironmentSpace.DeactivateThirdPersonInput();
             }
         }
 

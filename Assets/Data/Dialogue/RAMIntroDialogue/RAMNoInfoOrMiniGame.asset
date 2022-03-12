@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 99cf065fd0d544a5a1f86126db664c96, type: 3}
+  m_Name: RAMNoInfoOrMiniGame
+  m_EditorClassIdentifier: 
+  message: Sadly I have not prepared any info or mini games about this component.
+  dialogueCharacter: {fileID: 11400000, guid: f0186c31d789f824abaa85641b49a805, type: 2}
+  dialogueOptions:
+  - {fileID: 11400000, guid: 433840ab6d1b903488e48b818d442e59, type: 2}
+  loadImageEvents: []

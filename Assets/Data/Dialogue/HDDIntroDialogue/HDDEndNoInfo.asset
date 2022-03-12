@@ -9,7 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 365327de666b4d5ca7028e1ceaa8e5ba, type: 3}
-  m_Name: QuestLog
+  m_Script: {fileID: 11500000, guid: 95414872f1944f9db2ad7d2971f97dc9, type: 3}
+  m_Name: HDDEndNoInfo
   m_EditorClassIdentifier: 
-  activeQuests: []
+  dialogueEvents:
+  - {fileID: 11400000, guid: 0d13f1e0ab92a874782763ff4a76a4f5, type: 2}
+  - {fileID: 11400000, guid: 1c54de07cc0c50144a4da47473d718e0, type: 2}

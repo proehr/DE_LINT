@@ -50,6 +50,8 @@ MonoBehaviour:
   onFinishInstructionCycleGame: {fileID: 11400000, guid: 8da43541c1b3b46418dc73dc64c6bf4c, type: 2}
   environmentSpaces: {fileID: 6535006453296840171}
   explorationSpace: {fileID: 6535006452332925252}
+  dialogueController: {fileID: 8225966353423594564}
+  storyController: {fileID: 6535006453646507232}
 --- !u!1001 &572278450509608518
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -185,6 +187,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 22d5d8ae7ca4e624180a4a16f2afc26c, type: 3}
+--- !u!1 &6535006453646507232 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5060455280797486254, guid: 22d5d8ae7ca4e624180a4a16f2afc26c, type: 3}
+  m_PrefabInstance: {fileID: 2056835489210773582}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &6535006453646507235 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5060455280797486253, guid: 22d5d8ae7ca4e624180a4a16f2afc26c, type: 3}
@@ -251,6 +258,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 671cccb2645f2ba4fb1875bbc75bb7bd, type: 3}
+--- !u!1 &8225966353423594564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2727334606300715138, guid: 671cccb2645f2ba4fb1875bbc75bb7bd, type: 3}
+  m_PrefabInstance: {fileID: 6337110649370307782}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &5305308209909261026 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 2184752944007941668, guid: 671cccb2645f2ba4fb1875bbc75bb7bd, type: 3}

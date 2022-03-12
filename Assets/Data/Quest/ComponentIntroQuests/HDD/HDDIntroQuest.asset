@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae7805079184fcdb648fd29e2cc3fc3, type: 3}
+  m_Name: HDDIntroQuest
+  m_EditorClassIdentifier: 
+  questName: Hard Disk Drive Examination
+  onStartQuest: {fileID: 11400000, guid: a4150dc2fd2f0664083d9f29ab7b0d2e, type: 2}
+  questSteps:
+  - {fileID: 11400000, guid: a949b9080114e4047a55e1148842fbf1, type: 2}
+  currentQuestStep: {fileID: 11400000, guid: 02b24a61fd9a1f444b82ced587f116af, type: 2}
+  questLog: {fileID: 11400000, guid: 879c7268c4eaf2c469383c7e56e37d9a, type: 2}

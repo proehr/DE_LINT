@@ -10,10 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fae7805079184fcdb648fd29e2cc3fc3, type: 3}
-  m_Name: PrimaryStorageIntroQuest
+  m_Name: RAMIntroQuest
   m_EditorClassIdentifier: 
   questName: Primary Storage Examination
   onStartQuest: {fileID: 11400000, guid: e26f5e17e66b46447acfa8c87953bed5, type: 2}
-  questSteps: []
+  questSteps:
+  - {fileID: 11400000, guid: 704c5ab79e083c74c931a39b1957d6bd, type: 2}
   currentQuestStep: {fileID: 11400000, guid: a59be295af966a04da0dc8bfeded9b91, type: 2}
   questLog: {fileID: 11400000, guid: 879c7268c4eaf2c469383c7e56e37d9a, type: 2}

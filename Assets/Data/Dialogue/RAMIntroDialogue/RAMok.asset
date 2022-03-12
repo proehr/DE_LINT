@@ -9,7 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 365327de666b4d5ca7028e1ceaa8e5ba, type: 3}
-  m_Name: QuestLog
+  m_Script: {fileID: 11500000, guid: ec0f20d82c07467f82258881da5e5116, type: 3}
+  m_Name: RAMok
   m_EditorClassIdentifier: 
-  activeQuests: []
+  dialogueOptionText: Ok
+  nextDialogueStep: {fileID: 11400000, guid: 0722eecb41d7bce4b903b1cc546fbabc, type: 2}

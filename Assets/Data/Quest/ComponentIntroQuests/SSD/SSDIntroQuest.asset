@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fae7805079184fcdb648fd29e2cc3fc3, type: 3}
+  m_Name: SSDIntroQuest
+  m_EditorClassIdentifier: 
+  questName: Solid State Drive Examination
+  onStartQuest: {fileID: 11400000, guid: 9123e8c7b15a21e4db840ac4c52ada0f, type: 2}
+  questSteps:
+  - {fileID: 11400000, guid: 82aab2646aa6f8f45a10c56d263429fc, type: 2}
+  currentQuestStep: {fileID: 11400000, guid: 4c589a74310808b498a19e6e35ab2853, type: 2}
+  questLog: {fileID: 11400000, guid: 879c7268c4eaf2c469383c7e56e37d9a, type: 2}

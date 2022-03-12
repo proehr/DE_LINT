@@ -22,9 +22,7 @@ namespace GameController
         [SerializeField] private SaveFilePicker saveFilePicker;
         [SerializeField] private GameObject pauseScreenCanvas;
         [SerializeField] private GameObject gameplayController;
-        [SerializeField] private GameObject dialogueController;
         [SerializeField] private EnvironmentSpaces environmentSpaces;
-        [SerializeField] private GameObject storyController;
 
         private void Awake()
         {
@@ -35,7 +33,7 @@ namespace GameController
             onBackToStartScreen.RegisterListener(BackToStartScreen);
             onExit.RegisterListener(ExitGame); ;
 
-            InitializeStateMachine(new StartScreenState(startScreenCanvas, saveFilePicker, gameplayController, dialogueController, environmentSpaces, storyController));
+            InitializeStateMachine(new StartScreenState(startScreenCanvas, saveFilePicker, gameplayController));
         }
 
         private void StartGameplay()
@@ -60,7 +58,7 @@ namespace GameController
         
         private void BackToStartScreen()
         {
-            TransitionTo(new StartScreenState(startScreenCanvas, saveFilePicker, gameplayController, dialogueController, environmentSpaces, storyController));
+            TransitionTo(new StartScreenState(startScreenCanvas, saveFilePicker, gameplayController));
         }
 
         private void ExitGame()

@@ -184,7 +184,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: beb65f3a26e643749871ca15d7777f94, type: 2}
     - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
       propertyPath: gameplayData.Array.size
-      value: 9
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
       propertyPath: gameplayData.Array.data[0]
@@ -213,15 +213,43 @@ PrefabInstance:
     - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
       propertyPath: gameplayData.Array.data[6]
       value: 
-      objectReference: {fileID: 11400000, guid: 146f7a68c8cab75429c0fd314b1fb9c4, type: 2}
+      objectReference: {fileID: 11400000, guid: e61574e67545bf24ab5aec2b7468c35a, type: 2}
     - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
       propertyPath: gameplayData.Array.data[7]
       value: 
-      objectReference: {fileID: 11400000, guid: e61574e67545bf24ab5aec2b7468c35a, type: 2}
+      objectReference: {fileID: 11400000, guid: 146f7a68c8cab75429c0fd314b1fb9c4, type: 2}
     - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
       propertyPath: gameplayData.Array.data[8]
       value: 
+      objectReference: {fileID: 11400000, guid: 6ede5ecfd1f61d742839b56c44122777, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[9]
+      value: 
+      objectReference: {fileID: 11400000, guid: 02b24a61fd9a1f444b82ced587f116af, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[10]
+      value: 
       objectReference: {fileID: 11400000, guid: a59be295af966a04da0dc8bfeded9b91, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[11]
+      value: 
+      objectReference: {fileID: 11400000, guid: 4c589a74310808b498a19e6e35ab2853, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[12]
+      value: 
+      objectReference: {fileID: 11400000, guid: ab4dfde473b1d5c47bc705866373ee5f, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[13]
+      value: 
+      objectReference: {fileID: 11400000, guid: 57860a436f4d7894a9bffaccddc13add, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[14]
+      value: 
+      objectReference: {fileID: 11400000, guid: bcb924e1072bd8943bffeaf93eea5562, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[15]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3c290ef438e4c004881be62d3ed09420, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b08b6f84310397540b7f77174dac861d, type: 3}
 --- !u!1001 &1812997753
@@ -231,18 +259,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 493893090509110557, guid: 057d4e6894ad6c447ad3bf134735a9bc, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 493893090509110557, guid: 057d4e6894ad6c447ad3bf134735a9bc, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 493893090509110557, guid: 057d4e6894ad6c447ad3bf134735a9bc, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 5483033636715386641, guid: 057d4e6894ad6c447ad3bf134735a9bc, type: 3}
       propertyPath: m_Name
       value: GameController
