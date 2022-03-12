@@ -184,7 +184,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: beb65f3a26e643749871ca15d7777f94, type: 2}
     - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
       propertyPath: gameplayData.Array.size
-      value: 17
+      value: 24
       objectReference: {fileID: 0}
     - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
       propertyPath: gameplayData.Array.data[0]
@@ -254,6 +254,34 @@ PrefabInstance:
       propertyPath: gameplayData.Array.data[16]
       value: 
       objectReference: {fileID: 11400000, guid: eb5c3aaee8eeab24db5dd9b8b9f6b16f, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[17]
+      value: 
+      objectReference: {fileID: 11400000, guid: 284b7785a2b90b4438cbbeddaef9e495, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[18]
+      value: 
+      objectReference: {fileID: 11400000, guid: 257cf538e25136d44974396142792c26, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[19]
+      value: 
+      objectReference: {fileID: 11400000, guid: 952893794cdd0de44bd3c424fbd22bf8, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[20]
+      value: 
+      objectReference: {fileID: 11400000, guid: aaad8874ab8c28b4395e1a823b7a82c1, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[21]
+      value: 
+      objectReference: {fileID: 11400000, guid: e8789be230842d549ad1cd58f96c6a4a, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[22]
+      value: 
+      objectReference: {fileID: 11400000, guid: 3d76975ec9cff844080737a126a63ec0, type: 2}
+    - target: {fileID: 1826471410589456813, guid: b08b6f84310397540b7f77174dac861d, type: 3}
+      propertyPath: gameplayData.Array.data[23]
+      value: 
+      objectReference: {fileID: 11400000, guid: ec3292ede3f4b0049a6173e2f1385e5f, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b08b6f84310397540b7f77174dac861d, type: 3}
 --- !u!1001 &1812997753

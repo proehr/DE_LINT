@@ -4,16 +4,18 @@ namespace Utility
 {
     public class Floaty : MonoBehaviour
     {
-        internal Vector3 startPos;
+        internal float startPos;
     
         void Start()
         {
-            startPos = transform.position;
+            startPos = transform.position.y;
         }
 
         void Update()
         {
-            transform.position = new Vector3(startPos.x, startPos.y + Mathf.Sin(Time.fixedTime * Mathf.PI * 0.4f)*0.05f, startPos.z);
+            var position = transform.localPosition;
+            position = new Vector3(position.x, startPos + Mathf.Sin(Time.fixedTime * Mathf.PI * 0.4f)*0.1f, position.z);
+            transform.localPosition = position;
         }
     }
 }
