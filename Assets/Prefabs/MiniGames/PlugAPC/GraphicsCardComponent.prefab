@@ -76,7 +76,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentName: Graphics Card
-  function: Contains processing unit to produce graphics and images quickly
+  function: Contains processing unit specialised for computer graphics
   motherboardViewPrefab: {fileID: 4311020631505474029, guid: e330a03573a1d1d42a724aa6c8edfc4d, type: 3}
   onPressComponentButton: {fileID: 11400000, guid: 80def2d16c030324cabf8e5bd2339c5a, type: 2}
 --- !u!1001 &7692561442463660875

@@ -33,6 +33,7 @@ namespace MiniGames.InstructionCycle.InstructionCycleController
         {
             InitInstructionCycle();
             onResetInstructionCycle.RegisterListener(InitInstructionCycle);
+            onResetInstructionCycle.RegisterListener(ResetValueObjects);
         }
 
         private void InitInstructionCycle()
@@ -45,16 +46,6 @@ namespace MiniGames.InstructionCycle.InstructionCycleController
                 }
             }
 
-            foreach (InsertableRegister register in registers)
-            {
-                register.storedValueObject.ResetValueObject();
-                register.InitializeRegister();
-            }
-
-            programCounter.storedValueObject.ResetValueObject();
-            instructionRegister.storedValueObject.ResetValueObject();
-            alu.ResetValues();
-            
             instructionCounter = 0;
             heldValue.SetHeldValue(null);
             memoryBus.memoryEntries = new List<BaseValue>(memoryEntries);
@@ -62,10 +53,12 @@ namespace MiniGames.InstructionCycle.InstructionCycleController
             {
                 StartDecodeState();
             }
+
             if (currentStateSO.currentState is DecodeInstructionTypeState)
             {
                 StartExecutionState();
             }
+
             if (currentStateSO.currentState is ExecuteInstructionState)
             {
                 StartFetchInstructionState();
@@ -77,6 +70,21 @@ namespace MiniGames.InstructionCycle.InstructionCycleController
                 onInsertInstruction.RegisterListener(StartIncrementState);
                 hudController.SetTaskText("Fetch Instruction from memory");
             }
+        }
+
+        private void ResetValueObjects()
+        {
+            foreach (InsertableRegister register in registers)
+            {
+                register.storedValueObject.ResetValueObject();
+                register.InitializeRegister();
+            }
+
+            programCounter.storedValueObject.ResetValueObject();
+            programCounter.InitializeRegister();
+            instructionRegister.storedValueObject.ResetValueObject();
+            instructionRegister.InitializeRegister();
+            alu.ResetValues();
         }
 
         private void StartFetchInstructionState()

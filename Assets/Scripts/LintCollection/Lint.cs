@@ -1,7 +1,5 @@
 ﻿using System;
 using DataStructures.Variables;
-using UnityEditor;
-using UnityEditor.PackageManager;
 using UnityEngine;
 
 namespace LintCollection

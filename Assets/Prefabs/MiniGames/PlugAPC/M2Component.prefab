@@ -1098,7 +1098,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentName: Solid State Drive
-  function: Stores data, has low access times
+  function: Secondary storage, has low access times
   motherboardViewPrefab: {fileID: 1327644995974400239, guid: 5e6eeeccd62ddb340a7bc0d24fcdfd16, type: 3}
   onPressComponentButton: {fileID: 11400000, guid: 30fe28280d4ec3d4491266dc584dce49, type: 2}
 --- !u!1 &3722741447808591803

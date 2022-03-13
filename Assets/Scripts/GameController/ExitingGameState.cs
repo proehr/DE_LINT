@@ -10,6 +10,7 @@ namespace GameController
         public void Enter()
         {
             Debug.Log("Enter " + this.GetType().FullName);
+            Application.Quit();
         }
 
         public void Exit()

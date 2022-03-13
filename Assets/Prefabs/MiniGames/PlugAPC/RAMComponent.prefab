@@ -162,7 +162,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentName: RAM
-  function: Short term memory
+  function: Storage for opened programs
   motherboardViewPrefab: {fileID: 5214719676197629728, guid: 1fb1386dd2d4bfc4f9ef0376aa4a6b4e, type: 3}
   onPressComponentButton: {fileID: 11400000, guid: 852c61ffdf4f197459912a4749882824, type: 2}
 --- !u!1 &3344358069668606744

@@ -27550,7 +27550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentName: Motherboard
-  function: Tie all components together and allow communication between components
+  function: Tie all components together
   motherboardViewPrefab: {fileID: 0}
   onPressComponentButton: {fileID: 0}
 --- !u!1 &4469483236409889437

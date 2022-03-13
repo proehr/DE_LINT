@@ -45,7 +45,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   componentName: Hard Disk Drive
-  function: Data storage, has high access times
+  function: Secondary storage, has high access times
   motherboardViewPrefab: {fileID: 5028257196514351144, guid: 2b222cc023f505e4c89eeeead9d6e2d0, type: 3}
   onPressComponentButton: {fileID: 11400000, guid: 8f54ca36f1ff8784a99bf02edc32c5f9, type: 2}
 --- !u!1001 &1485565244385389048
