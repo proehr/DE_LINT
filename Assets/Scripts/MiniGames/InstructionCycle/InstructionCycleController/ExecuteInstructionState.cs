@@ -56,6 +56,7 @@ namespace MiniGames.InstructionCycle.InstructionCycleController
             }
             else if (instruction.parameterOne is RegisterAddress)
             {
+                registers[instruction.parameterOne.value].SetTargetValue(targetValueType, targetValue);
                 registers[instruction.parameterOne.value].insertValueInteraction.onInteractionEvents
                     .Add(onChangeTargetValue);
             }

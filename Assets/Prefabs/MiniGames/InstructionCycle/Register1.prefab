@@ -52,6 +52,7 @@ MonoBehaviour:
   insertValueInteraction: {fileID: 1449071775917445163}
   onPickUpValue: {fileID: 11400000, guid: 54f927c73df5dbc4f912d0bea6f5dd62, type: 2}
   onDropValue: {fileID: 11400000, guid: 0cbc81c6fe150cf4fa24e26e38b9d963, type: 2}
+  heldValue: {fileID: 11400000, guid: a0c33d8d8feee6947a5422b3b972fef8, type: 2}
 --- !u!1 &1449071775582278794
 GameObject:
   m_ObjectHideFlags: 0
@@ -98,6 +99,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionNotice: Pick up stored value
   onInteractionEvents: []
+  onceInteractable: 0
+  isActive: {fileID: 0}
   heldValue: {fileID: 11400000, guid: a0c33d8d8feee6947a5422b3b972fef8, type: 2}
   register: {fileID: 1449071775522061582}
 --- !u!1 &1449071775917445161
@@ -146,6 +149,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionNotice: Insert held value
   onInteractionEvents: []
+  onceInteractable: 0
+  isActive: {fileID: 0}
   heldValue: {fileID: 11400000, guid: a0c33d8d8feee6947a5422b3b972fef8, type: 2}
   register: {fileID: 1449071775522061582}
 --- !u!1 &1449071776028358787

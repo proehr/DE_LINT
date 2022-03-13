@@ -9,6 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c939a1559d064d1ab01a580af5e3f0bf, type: 3}
-  m_Name: onPickUpInstruction
+  m_Script: {fileID: 11500000, guid: ec0f20d82c07467f82258881da5e5116, type: 3}
+  m_Name: whatnow
   m_EditorClassIdentifier: 
+  dialogueOptionText: Ok, so what do I do now?
+  nextDialogueStep: {fileID: 11400000, guid: 84a3ed2dc5132a34aa2f9872b01dbb2a, type: 2}

@@ -10,18 +10,11 @@ namespace MiniGames.InstructionCycle
         [SerializeField] private TransportableValue value;
         [SerializeField] private GameEvent onChangeHeldValue;
         [SerializeField] private GameEvent onPickUpValue;
-        [SerializeField] private GameEvent onDropValue;
         [SerializeField] private GameEvent onPickUpMemoryAddress;
         [SerializeField] private GameEvent onDropMemoryAddress;
-        [SerializeField] private GameEvent onPickUpInstruction;
-        [SerializeField] private GameEvent onDropInstruction;
 
         public void SetHeldValue(TransportableValue v)
         {
-            if (value == null && v != null)
-            {
-                onPickUpValue.Raise();
-            }
             if (!(value is MemoryAddress) && v is MemoryAddress)
             {
                 onPickUpMemoryAddress.Raise();
@@ -30,15 +23,8 @@ namespace MiniGames.InstructionCycle
             {
                 onDropMemoryAddress.Raise();
             }
-            if (!(value is Instruction) && v is Instruction)
-            {
-                onPickUpInstruction.Raise();
-            }
-            else if (value is Instruction && !(v is Instruction))
-            {
-                onDropInstruction.Raise();
-            }
             this.value = v;
+            onPickUpValue.Raise();
             onChangeHeldValue.Raise();
         }
         
@@ -49,17 +35,9 @@ namespace MiniGames.InstructionCycle
 
         public void DropHeldValue()
         {
-            if (value != null)
-            {
-                onDropValue.Raise();
-            }
             if (value is MemoryAddress)
             {
                 onDropMemoryAddress.Raise();
-            }
-            if (value is Instruction)
-            {
-                onDropInstruction.Raise();
             }
             value = null;
             onChangeHeldValue.Raise();

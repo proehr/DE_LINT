@@ -44,6 +44,7 @@ namespace MiniGames.PlugAPC
             currentComponent = Instantiate(randomizedComponentList[i], transform);
             rotatorView.rotator = currentComponent.gameObject;
             infoBox.text = "Pick the correct name and function for this component";
+            infoBox.color = new Color(0.003879223f, 0, 0.1698113f);
         }
         
         private void NextComponent()
@@ -98,6 +99,11 @@ namespace MiniGames.PlugAPC
                 onDropdownChange.RegisterListener(CheckDropdownValues);
                 NextComponent();
             }
+            else
+            {
+                infoBox.text = "Pick the correct name and function for this component";
+                infoBox.color = new Color(0.003879223f, 0, 0.1698113f);
+            }
         }
 
         private void CheckDropdownValues()
@@ -106,6 +112,7 @@ namespace MiniGames.PlugAPC
                 componentFunctionDropdown.options[componentFunctionDropdown.value].text == currentComponent.Function)
             {
                 infoBox.text = "Great! Now pick a location on the motherboard for this component";
+                infoBox.color = new Color(0.8301887f, 0, 0.01459989f);
                 currentComponent.OnPressComponentButton.RegisterListener(PlaceComponentOnMotherboard);
                 currentComponent.OnPressComponentButton.RegisterListener(NextComponent);
             }

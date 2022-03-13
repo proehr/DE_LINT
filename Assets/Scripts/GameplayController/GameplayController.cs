@@ -25,7 +25,7 @@ namespace GameplayController
 
         private void OnDisable()
         {
-            onFinishInstructionCycleGame.RegisterListener(BackToExplorationSpace);
+            onFinishInstructionCycleGame.UnregisterListener(BackToExplorationSpace);
             dialogueController.SetActive(false);
             environmentSpaces.gameObject.SetActive(false);
             questController.SetActive(false);

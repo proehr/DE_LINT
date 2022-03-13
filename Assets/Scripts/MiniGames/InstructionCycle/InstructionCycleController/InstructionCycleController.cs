@@ -29,15 +29,9 @@ namespace MiniGames.InstructionCycle.InstructionCycleController
         private int instructionCount;
         private int instructionCounter;
 
-        private void Awake()
+        private void OnEnable()
         {
-            InitInstructionCycle();
-            onResetInstructionCycle.RegisterListener(InitInstructionCycle);
-            onResetInstructionCycle.RegisterListener(ResetValueObjects);
-        }
-
-        private void InitInstructionCycle()
-        {
+            instructionCount = 0;
             foreach (BaseValue memoryEntry in memoryEntries)
             {
                 if (memoryEntry is Instruction)
@@ -45,10 +39,23 @@ namespace MiniGames.InstructionCycle.InstructionCycleController
                     instructionCount++;
                 }
             }
+            
+            InitInstructionCycle();
+            onResetInstructionCycle.RegisterListener(InitInstructionCycle);
+            onResetInstructionCycle.RegisterListener(ResetValueObjects);
+        }
 
+        private void InitInstructionCycle()
+        {
             instructionCounter = 0;
             heldValue.SetHeldValue(null);
             memoryBus.memoryEntries = new List<BaseValue>(memoryEntries);
+                        
+            if (currentStateSO.currentState is FetchInstructionState)
+            {
+                StartFetchInstructionState();
+            }
+            
             if (currentStateSO.currentState is IncrementProgramCounterState)
             {
                 StartDecodeState();
@@ -64,9 +71,9 @@ namespace MiniGames.InstructionCycle.InstructionCycleController
                 StartFetchInstructionState();
             }
 
-            if (currentStateSO.currentState == null)
+            if (currentStateSO.currentState is FetchInstructionState || currentStateSO.currentState == null)
             {
-                InitializeStateMachine(new FetchInstructionState());
+                InitializeStateMachine(new FetchInstructionState((Instruction)memoryBus.GetFromMemory((MemoryAddress)programCounter.storedValueObject.value), instructionRegister));
                 onInsertInstruction.RegisterListener(StartIncrementState);
                 hudController.SetTaskText("Fetch Instruction from memory");
             }
@@ -89,16 +96,32 @@ namespace MiniGames.InstructionCycle.InstructionCycleController
 
         private void StartFetchInstructionState()
         {
+            instructionCounter++;
+            
             if (instructionCounter >= instructionCount)
             {
                 onFinishInstructionCycleGame.Raise();
             }
-
-            instructionCounter++;
             onFinishExecution.UnregisterListener(StartFetchInstructionState);
-            TransitionTo(new FetchInstructionState());
+            TransitionTo(new FetchInstructionState((Instruction)memoryBus.memoryEntries[programCounter.storedValueObject.value.value], instructionRegister));
             onInsertInstruction.RegisterListener(StartIncrementState);
             hudController.SetTaskText("Fetch Instruction from memory");
+        }
+        
+        private void StartIncrementState()
+        {
+            onInsertInstruction.UnregisterListener(StartIncrementState);
+            TransitionTo(new IncrementProgramCounterState());
+            onIncrementProgramCounter.RegisterListener(StartDecodeState);
+            hudController.SetTaskText("Increment Program Counter");
+        }
+        
+        private void StartDecodeState()
+        {
+            onIncrementProgramCounter.UnregisterListener(StartDecodeState);
+            TransitionTo(new DecodeInstructionTypeState());
+            onDecodeInstruction.RegisterListener(StartExecutionState);
+            hudController.SetTaskText("Decode Instruction in Instruction Register");
         }
 
         private void StartExecutionState()
@@ -112,21 +135,6 @@ namespace MiniGames.InstructionCycle.InstructionCycleController
                                       ((Instruction) instructionRegister.storedValueObject.value)
                                       .instructionDescription);
         }
-
-        private void StartDecodeState()
-        {
-            onIncrementProgramCounter.UnregisterListener(StartDecodeState);
-            TransitionTo(new DecodeInstructionTypeState());
-            onDecodeInstruction.RegisterListener(StartExecutionState);
-            hudController.SetTaskText("Decode Instruction in Instruction Register");
-        }
-
-        private void StartIncrementState()
-        {
-            onInsertInstruction.UnregisterListener(StartIncrementState);
-            TransitionTo(new IncrementProgramCounterState());
-            onIncrementProgramCounter.RegisterListener(StartDecodeState);
-            hudController.SetTaskText("Increment Program Counter");
-        }
+        
     }
 }

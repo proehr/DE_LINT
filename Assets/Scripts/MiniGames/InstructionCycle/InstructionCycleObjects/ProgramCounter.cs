@@ -9,13 +9,13 @@ namespace MiniGames.InstructionCycle.InstructionCycleObjects
         [SerializeField] private BaseInteractableObject incrementValueInteraction;
         [SerializeField] private GameEvent onIncrementCounter;
         [SerializeField] private GameEvent onInsertInstruction;
-        
-        private new void Awake()
+
+        internal override void InitializeRegister()
         {
             DeactivateIncrementation();
             onIncrementCounter.RegisterListener(DeactivateIncrementation);
             onInsertInstruction.RegisterListener(ActivateIncrementation);
-            base.Awake();
+            base.InitializeRegister();
         }
 
         private void ActivateIncrementation()

@@ -2427,6 +2427,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Register1
       objectReference: {fileID: 0}
+    - target: {fileID: 1449071775522061582, guid: 1b15930ae26943e418afa0ef5e2bfa9b, type: 3}
+      propertyPath: heldValue
+      value: 
+      objectReference: {fileID: 11400000, guid: a0c33d8d8feee6947a5422b3b972fef8, type: 2}
     - target: {fileID: 1449071775522061583, guid: 1b15930ae26943e418afa0ef5e2bfa9b, type: 3}
       propertyPath: m_RootOrder
       value: 5
@@ -2916,6 +2920,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 568462080376335755, guid: 106be3c6a743e2c41b824c1ce8ff39b3, type: 3}
+      propertyPath: heldValue
+      value: 
+      objectReference: {fileID: 11400000, guid: a0c33d8d8feee6947a5422b3b972fef8, type: 2}
     - target: {fileID: 568462080376335756, guid: 106be3c6a743e2c41b824c1ce8ff39b3, type: 3}
       propertyPath: m_Name
       value: InstructionRegister

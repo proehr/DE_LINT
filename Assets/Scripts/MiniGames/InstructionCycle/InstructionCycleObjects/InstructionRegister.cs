@@ -21,6 +21,7 @@ namespace MiniGames.InstructionCycle.InstructionCycleObjects
             DeactivateGameObject(instructionNameValueObject.gameObject);
             DeactivateGameObject(firstParameterValueObject.gameObject);
             DeactivateGameObject(secondParameterValueObject.gameObject);
+            ActivateGameObject(storedValueObject.gameObject);
             onIncrementProgramCounter.RegisterListener(ActivateDecodeInteraction);
             onInsertInstruction.RegisterListener(DeactivateDecodedInstructionInfo);
             onDecodeInstruction.RegisterListener(DeactivateDecodeInteraction);

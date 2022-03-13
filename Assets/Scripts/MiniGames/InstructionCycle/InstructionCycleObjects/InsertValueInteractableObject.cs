@@ -6,7 +6,7 @@ namespace MiniGames.InstructionCycle.InstructionCycleObjects
     public class InsertValueInteractableObject : BaseInteractableObject
     {
         [SerializeField] private HeldValue_SO heldValue;
-        [SerializeField] private Register register;
+        [SerializeField] private InsertableRegister register;
 
         protected internal override void Interact()
         {

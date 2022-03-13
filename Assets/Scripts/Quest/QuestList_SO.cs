@@ -12,6 +12,7 @@ namespace Quest
 
         internal void InitQuests()
         {
+            quests = new Dictionary<String, Quest_SO>();
             foreach (Quest_SO quest in questList)
             {
                 quests.Add(quest.QuestName, quest);

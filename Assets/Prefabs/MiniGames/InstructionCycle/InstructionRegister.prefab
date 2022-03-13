@@ -54,8 +54,9 @@ MonoBehaviour:
   pickUpValueInteraction: {fileID: 568462081989453120}
   storedValueObject: {fileID: 568462080479758544}
   insertValueInteraction: {fileID: 568462080545034846}
-  onPickUpValue: {fileID: 11400000, guid: 8f7879e7858a9ea42acf07351dc2c5fb, type: 2}
-  onDropValue: {fileID: 11400000, guid: 541937e2ec09f7b449c39c9069597de3, type: 2}
+  onPickUpValue: {fileID: 11400000, guid: 54f927c73df5dbc4f912d0bea6f5dd62, type: 2}
+  onDropValue: {fileID: 11400000, guid: 0cbc81c6fe150cf4fa24e26e38b9d963, type: 2}
+  heldValue: {fileID: 11400000, guid: a0c33d8d8feee6947a5422b3b972fef8, type: 2}
   decodeInstructionInteraction: {fileID: 568462082127151547}
   onIncrementProgramCounter: {fileID: 11400000, guid: 2d1729d155f217b4283b41abb18050b0, type: 2}
   onInsertInstruction: {fileID: 11400000, guid: 3cb0911d80e013545b29236fb7ca072e, type: 2}
@@ -110,6 +111,8 @@ MonoBehaviour:
   interactionNotice: Insert held value
   onInteractionEvents:
   - {fileID: 11400000, guid: 3cb0911d80e013545b29236fb7ca072e, type: 2}
+  onceInteractable: 0
+  isActive: {fileID: 0}
   heldValue: {fileID: 11400000, guid: a0c33d8d8feee6947a5422b3b972fef8, type: 2}
   register: {fileID: 568462080376335755}
 --- !u!1 &568462080584084712
@@ -335,6 +338,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   interactionNotice: Pick up stored value
   onInteractionEvents: []
+  onceInteractable: 0
+  isActive: {fileID: 0}
   heldValue: {fileID: 11400000, guid: a0c33d8d8feee6947a5422b3b972fef8, type: 2}
   register: {fileID: 568462080376335755}
 --- !u!1 &568462082127151549
@@ -384,6 +389,8 @@ MonoBehaviour:
   interactionNotice: Decode instruction
   onInteractionEvents:
   - {fileID: 11400000, guid: d0b1a120ef933714b90fe34cc8dcd0d4, type: 2}
+  onceInteractable: 0
+  isActive: {fileID: 0}
   register: {fileID: 568462080376335755}
   onWriteToMemoryInstructionDecode: {fileID: 11400000, guid: 64c5d73ed0b8c254c88a958fa6f98bdb, type: 2}
 --- !u!1001 &568462080166551445

@@ -10,14 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 99cf065fd0d544a5a1f86126db664c96, type: 3}
-  m_Name: EnterPCInfo
+  m_Name: EnterPCInfo1
   m_EditorClassIdentifier: 
-  message: Welcome to my home! I have shrinked us a bit so we can get around the
-    motherboard easily. Walk around with WASD, jump with Spacebar and use your mouse
-    to look around. If you find any of my Lint sisters or brothers just walk through
-    them and your PC will be clean in no time! If you want to interact with something
-    press F, or scroll through your options first.
+  message: Why don't you have a closer look at the main components? I have added
+    a quest for each of them into your quest log, you can open it by pressing J on
+    your keyboard.
   dialogueCharacter: {fileID: 11400000, guid: f0186c31d789f824abaa85641b49a805, type: 2}
   dialogueOptions:
-  - {fileID: 11400000, guid: 0e6aacd4972a64a4da46a7ed1eefaa3f, type: 2}
+  - {fileID: 11400000, guid: 8d504a60904e85f4abdc77f7c9240bcf, type: 2}
   loadImageEvents: []

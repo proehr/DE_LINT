@@ -19,7 +19,7 @@ namespace MiniGames.InstructionCycle.InstructionCycleObjects
 
         internal virtual void InitializeRegister()
         {
-            if (storedValueObject != null)
+            if (storedValueObject != null && storedValueObject.value != null)
             {
                 pickUpValueInteraction.gameObject.SetActive(true);
             }
@@ -27,15 +27,6 @@ namespace MiniGames.InstructionCycle.InstructionCycleObjects
             {
                 pickUpValueInteraction.gameObject.SetActive(false);
             }
-        }
-
-        public void SetStoredValue(BaseValue value)
-        {
-            if (storedValueObject != null && value != null)
-            {
-                pickUpValueInteraction.gameObject.SetActive(true);
-            }
-            storedValueObject.SetValue(value);
         }
     }
 }
